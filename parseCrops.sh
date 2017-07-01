@@ -4,13 +4,19 @@
 # each step performed.
 # It also needs a ISO3166 database in CSV format to convert the country names
 # to country codes.
-# source: https://dev.maxmind.com/geoip/legacy/codes/iso3166/
+# source: https://github.com/lukes/ISO-3166-Countries-with-Regional-Codes,
+# modified
+# 
+# LICENSE: Copyright (c) 2017 rugk, MIT license, see LICENSE.md
+# 
+# use: parseCrop.sh FAQSTAT_input.csv cropsOutput.yml
+# 
 
 # constants
-TMPDIR="."
+TMPDIR="/tmp/cropsGenerator"
 MAX_LIST=5
 CROP_BLACKLIST="Total Fruit, Cereals Vegetables Wheat Barley"
-ISO3166_DB="./iso3166.csv"
+ISO3166_DB="./iso3166.csv" # (modified)
 
 # contains(string, substring)
 #
@@ -34,13 +40,18 @@ contains() {
 # Using $ISO3166_DB this converts the country names to the corresponding country
 # codes. If this fails, it returns an empty string.
 convertCountryNameToCode() {
-    grep "$1" "$ISO3166_DB" | cut -d , -f 1
+    grep "$1" "$ISO3166_DB" | head -n 1 | cut -d , -f 2
 }
+
+if [ ! -e "$TMPDIR" ]; then
+    mkdir -p "$TMPDIR"
+fi
 
 input="$1"
 tmpfile="$TMPDIR/data.csv"
+outfile="$2"
 
-echo "Extract/normalize CSV…"
+echo "Prepare CSV…"
 # extract columns & remove header
 csvtool namedcol Area,Item,Value "$input" > "$tmpfile.1"
 # OR: csvtool col 4,8,12 "$input" > "$tmpfile.1"
@@ -60,7 +71,7 @@ replacecomma() {
     # replace comma in area & item columns
     for col in "$1" "$2"; do
         # remove unneccessary informatioon in brackets
-        col=$( echo "$col" | sed -e 's/(.*)\h*\(.*\)//g' )
+        # col=$( echo "$col" | sed -e 's/(.*)\h*\(.*\)//g' )
         
         # remove " and ,
         col=$( echo "$col" | sed -e 's/,/-/g' )
@@ -87,15 +98,7 @@ echo "Evaluate data…"
 # get country list
 areas=$( cut -d , -f 1 "$tmpfile.4" | sort | uniq )
 
-# output header
 rm "$tmpfile.5" 2> /dev/null
-{
-    echo "# list of most produced/cultivated crops/fruits in the world"
-    echo "# source: Food and Agriculture Organization of the United Nations, http://www.fao.org/faostat/en/#data/QC"
-    echo "# created/parsed by script: <add link here>"
-    echo "# updated at: $( date +'%F' )"
-    echo "default: [Sugar cane, Potatoes, Sugar beet, Soybeans, Cassava, Tomatoes]" # source: https://en.wikipedia.org/wiki/Agriculture#Crop_statistics
-} > "$tmpfile.5"
 
 # set IFS to line break
 IFS="
@@ -108,16 +111,30 @@ for area in $areas; do
         continue
     fi
     
-    # extract data from file
-    crops=$( grep -e "$area," < "$tmpfile.4" | cut -d , -f 2 | sort | uniq | head -n "$MAX_LIST" | tr '\n' ',' | sed -e 's/,/, /g' )
+    # extract data from file, form it into one line separated with commas
+    crops=$( grep "$area," "$tmpfile.4" | cut -d , -f 2 | sort | uniq | head -n "$MAX_LIST" | tr '\n' ',' | sed -e 's/,/, /g' )
     
     if [ "$crops" = "" ]; then
         echo "No crops for $area could be found. Skip."
         continue
     fi
     
-    
     # write data into new file
-    # the stripping of the last characters (the last ", ") is not strictly POSIX-compilant, but works in all shells, nowadays
+    # the stripping of the last characters (the last ", ") is not strictly POSIX-compliant, but works in all shells, nowadays
     printf "%s: [%s]\n" "$areaShort" "${crops:0:-2}" >> "$tmpfile.5"
 done
+
+# final steps
+echo "Finish processing…"
+
+{
+    echo "# list of most produced/cultivated crops/fruits in the world"
+    echo "# source: Food and Agriculture Organization of the United Nations, http://www.fao.org/faostat/en/#data/QC"
+    echo "# created/parsed by script: https://github.com/rugk/crop-parser"
+    echo "# updated at: $( date +'%F' )"
+    echo "default: [Sugar cane, Potatoes, Sugar beet, Soybeans, Cassava, Tomatoes]" # source: https://en.wikipedia.org/wiki/Agriculture#Crop_statistics
+} > "$outfile"
+
+# append sorted data
+sort "$tmpfile.5" >> "$outfile"
+# rm -rf "$TMPDIR"
