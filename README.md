@@ -4,7 +4,7 @@ This shell script parses data from the [Food and Agriculture Organization of the
 
 It has been created for the OpenStreetMap mapping app [StreetComplete](https://github.com/westnordost/StreetComplete), see [this issue](https://github.com/westnordost/StreetComplete/issues/368) for details.
 
-## How to rum it?
+## How to run it?
 
 The script is mostly POSIX-compliant, so it should work on all systems, but a CLI tool called [csvtool](https://github.com/Chris00/ocaml-csv) has to be installed as it is used as a CSV parser.
 
