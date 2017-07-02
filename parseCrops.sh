@@ -113,9 +113,9 @@ adjustdatasets() {
             if [ $OSM_HANDLING -ge 2 ]; then
                 # skip keys
                 return
-            else
+            # else
                 # only show warning
-                echo "WARNING: No OSM key found for $item. (counry: $area)"
+                # echo "WARNING: No OSM key found for $item. (counry: $area)"
             fi
         else
             # if successful -> use OSM key instead of real name

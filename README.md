@@ -23,9 +23,9 @@ Finish processing…
 
 This is an overview of what happens:
 * `Prepare CSV…` – It strips the table header and extracts the columns of interest.
-* `Adjusting datasets…` – Adjusts each dataset. E.g. it strips commas for easier processing, applies the blacklist and coverts the crop names to OSM keys.
+* `Adjusting datasets…` – Adjusts each dataset. E.g. it strips commas for easier processing, applies the blacklist and coverts the crop names to OSM keys (optional).
 * `Sort data…` – It sorts the whole data according to the tonnes of produced crops, independent of the country.
-* `Evaluate data…` – It extracts all crops for each country and transforms the first five crops listet into the YAML format. Additionally it replaces the country name with the 2-letter country code (ISO 3166) and the crop name with the corresponding OSM tags (optional).
+* `Evaluate data…` – It extracts all crops for each country and transforms the first five crops listet into the YAML format. Additionally it replaces the country name with the 2-letter country code (ISO 3166).
 * `Finish processing…` – It adds the header and default crops and sorts the YAML another time, so the countries are sorted.
 
 ## Result
