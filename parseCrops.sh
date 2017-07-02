@@ -17,6 +17,9 @@ TMPDIR="/tmp/cropsGenerator"
 MAX_LIST=5
 CROP_BLACKLIST=$( cat crop-blacklist.list )
 ISO3166_DB="./iso3166.csv" # (modified)
+OSM_CROP_KEY_DB="./osmcrops.csv"
+# Convert to OSM keys? 0=no; 1=yes; 2=yes, and skip non-OSM keys
+OSM_HANDLING="1"
 
 # contains(string, substring)
 #
@@ -34,13 +37,39 @@ contains() {
         return 1    # $substring is not in $string
     fi
 }
+# simplifyCsvKey()
+#
+# Takes CSV keys (not the whole file!) as STDIN and converts it into a simpler
+# format.
+# It replaces , (commas) with - (dashes) and strips quotation marks.
+simplifyCsvKey() {
+    sed -e 's/,/-/g' | sed -e 's/"//g'
+}
+
+# getFromCsv(database, entry, resultColumn)
+#
+# Returns an entry for a simple key -> value CSV database. Note that it does not
+# handle CSV files properly (commas and quotations), so the databases should
+# be adjusted.
+# If multiple values are present, only the first one is returned.
+getFromCsv() {
+    grep "$2" "$1" | head -n 1 | cut -d , -f "$3"
+}
 
 # convertCountryNameToCode(countryName)
 #
 # Using $ISO3166_DB this converts the country names to the corresponding country
 # codes. If this fails, it returns an empty string.
 convertCountryNameToCode() {
-    grep "$1" "$ISO3166_DB" | head -n 1 | cut -d , -f 2
+    getFromCsv "$ISO3166_DB" "$1" 2
+}
+
+# convertCropToOsmKey(cropName)
+#
+# Using $OSM_CROP_KEY_DB this converts the full crop names to the corresponding
+# OSM key describing the crop. If this fails, it returns an empty string.
+convertCropToOsmKey() {
+    getFromCsv "$OSM_CROP_KEY_DB" "^$1," 2
 }
 
 if [ ! -e "$TMPDIR" ]; then
@@ -59,8 +88,8 @@ csvtool drop 1 "$tmpfile.1" > "$tmpfile.2"
 
 # replace , (comma) in file with different value to ease CSV processing and
 # apply blacklist
-echo "Stripping unwanted data and commas…"
-filteritems() {
+echo "Adjusting datasets…"
+adjustdatasets() {
     # remove ignored crops
     # set IFS to line break
     IFS='
@@ -71,25 +100,44 @@ filteritems() {
             return
         fi
     done
-    
-    # replace comma in area & item columns
-    for col in "$1" "$2"; do
-        # remove " and ,
-        col=$( echo "$col" | sed -e 's/,/-/g' )
-        col=$( echo "$col" | sed -e 's/"//g' )
-        printf "%s," "$col" >> "$tmpfile.3"
-    done    
 
+    # replace comma in area & item columns
+    area=$( printf "%s" "$1" | simplifyCsvKey )
+    item=$( printf "%s" "$2" | simplifyCsvKey )
+    
+    # optionally, convert items to OSM keys
+    if [ $OSM_HANDLING -ge 1 ]; then
+        itemOsm=$( convertCropToOsmKey "$item" )
+        
+        if [ "$itemOsm" = "" ]; then
+            if [ $OSM_HANDLING -ge 2 ]; then
+                # skip keys
+                return
+            else
+                # only show warning
+                echo "WARNING: No OSM key found for $item. (counry: $area)"
+            fi
+        else
+            # if successful -> use OSM key instead of real name
+            item="$itemOsm"
+        fi
+    fi
+    
     # numbers in value column do not need special handling
-    printf "%s\n" "$3" >> "$tmpfile.3"
+    printf "%s,%s,%s\n" "$area" "$item" "$3" >> "$tmpfile.3"
 }
+export OSM_HANDLING
+export OSM_CROP_KEY_DB
 export CROP_BLACKLIST
 export tmpfile
 export -f contains
-export -f filteritems
+export -f getFromCsv
+export -f simplifyCsvKey
+export -f convertCropToOsmKey
+export -f adjustdatasets
 
 rm "$tmpfile.3" 2> /dev/null
-csvtool call filteritems "$tmpfile.2" 
+csvtool call adjustdatasets "$tmpfile.2" 
 
 echo "Sort data…"
 # sort data by "value"
@@ -98,7 +146,7 @@ sort --field-separator=',' -n -r --key=3 "$tmpfile.3" > "$tmpfile.4"
 echo "Evaluate data…"
 # get country list
 areas=$( cut -d , -f 1 "$tmpfile.4" | sort | uniq )
-areasOriginal=$( csvtool col 1 "$tmpfile.2" | sed -e 's/,/-/g' | sed -e 's/"//g' | sort | uniq )
+areasOriginal=$( csvtool col 1 "$tmpfile.2" | simplifyCsvKey | sort | uniq )
 areasNoData=$(echo "$areas
 $areasOriginal" | sort | uniq -u )
 
@@ -112,7 +160,7 @@ for area in $areas; do
     # (try to) get country code
     areaShort=$( convertCountryNameToCode "$area" )
     if [ "$areaShort" = "" ]; then
-        echo "No language code for $area could be found. Skip."
+        echo "WARNING: No language code for $area could be found. Skip."
         continue
     fi
     
@@ -133,7 +181,7 @@ echo "Finish processing…"
     echo "# source: Food and Agriculture Organization of the United Nations, http://www.fao.org/faostat/en/#data/QC"
     echo "# created/parsed by script: https://github.com/rugk/crops-parser"
     echo "# updated at: $( date +'%F' )"
-    echo "default: [Sugar cane, Potatoes, Sugar beet, Soybeans, Cassava, Tomatoes]" # source: https://en.wikipedia.org/wiki/Agriculture#Crop_statistics
+    echo "default: [crop=sugarcane, crop=potatoes, crop=sugar, Soybeans, crop=cassava, Tomatoes]" # source: https://en.wikipedia.org/wiki/Agriculture#Crop_statistics
 } > "$outfile"
 
 # append sorted data

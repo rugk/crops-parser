@@ -1,0 +1,39 @@
+crop name,OSM key,comment
+Apples,trees=apple_trees,also possible: crop=apple
+Asparagus,crop=asparagus,
+Bananas,crop=bananas,or: trees=banana_plants
+,crop=berries,or: crop=berry_plants
+Cassava,crop=cassava,
+Coffee,trees=coffee_plants,also possible: crop=coffee
+Grapes,landuse=vineyard,also possible: crop=grape
+Hops,crop=hop,Too specific? Cereal?
+Kiwi fruit,crop=kiwi,
+Walnuts,trees=walnut_trees,also possible crop=walnut_trees; crop=nut
+Cashew nuts- with shell,crop=nut,maybe a bit unspecific??
+Pears,trees=pear_trees,also possible: crop=pear
+Potatoes,crop=potatoes,
+Sugar cane,crop=sugarcane,
+Sugar beet,crop=sugar,maybe a bit unspecific??
+Sunflower seed,crop=sunflower,"Are sunflower seed fields really sunflower fields?? Also, maybe blacklist?"
+Tea,crop=tea,or: trees=tea_plants
+???????,crop=mussels,TODO
+Cherries,trees=cherry_trees,
+Coconuts,trees=coconut_palms,
+Mangoes- mangosteens- guavas,trees=guava_trees-or-trees=mango_trees,??????
+Papayas,trees=papaya_trees,
+Pineapples,trees=pineapple_plants,
+Agave fibres nes,trees=agave_plants,"source data only has fibres, but that does not matter"
+Avocados,trees=avocado_trees ,
+Dates,trees=date_palms,
+Figs,trees=fig_trees,
+Lemons and limes,trees=lemon_trees,"Botanically not correct, but who can differ lemons and limes on a tree anyway? Also there is no OSM tag for limes."
+Olives,trees=olive_trees,
+Oranges,trees=orange_trees,
+Almonds- with shell,trees=almond_trees,
+Apricots,trees=apricot_trees,
+Chestnut,trees=chestnut_trees ,also maybe crop=nut?
+Hazelnuts- with shell,trees=hazel_plants,
+Peaches and nectarines,trees=peach_trees,"Wiki-EN: “Peach and nectarines are the same species, even though they are regarded commercially as different fruits.”"
+Persimmons,trees=persimmon_trees,
+Pistachios,trees=pistachio_trees,also maybe crop=nut?
+Plums and sloes,trees=plum_trees,"A hybrid, basically the same, does not matter here anyway"
