@@ -15,7 +15,7 @@
 # constants
 TMPDIR="/tmp/cropsGenerator"
 MAX_LIST=5
-CROP_BLACKLIST="Total Fruit, Cereals Vegetables Wheat Barley Rye Maize Rapeseed Sorghum Millet ', nes' Triticale Oats Oilcrops Oilcakes"
+CROP_BLACKLIST="Total Fruit, Cereals Vegetables Wheat Barley Rye Maize Rapeseed Sorghum Millet ', nes' Triticale Oats Oilcrops Oilcakes 'Fibre crops nes'"
 ISO3166_DB="./iso3166.csv" # (modified)
 
 # contains(string, substring)
