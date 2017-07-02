@@ -15,7 +15,7 @@
 # constants
 TMPDIR="/tmp/cropsGenerator"
 MAX_LIST=5
-CROP_BLACKLIST="Total Fruit, Cereals Vegetables Wheat Barley Rye Maize Rapeseed Sorghum Millet ', nes' Triticale Oats Oilcrops Oilcakes 'Fibre crops nes'"
+CROP_BLACKLIST=$( cat crop-blacklist.list )
 ISO3166_DB="./iso3166.csv" # (modified)
 
 # contains(string, substring)
@@ -57,10 +57,14 @@ csvtool namedcol Area,Item,Value "$input" > "$tmpfile.1"
 # OR: csvtool col 4,8,12 "$input" > "$tmpfile.1"
 csvtool drop 1 "$tmpfile.1" > "$tmpfile.2"
 
-# replace , (comma) in file with different value to ease CSV processing
+# replace , (comma) in file with different value to ease CSV processing and
+# apply blacklist
 echo "Stripping unwanted data and commas…"
-replacecomma() {
-    # remove ignored fruits
+filteritems() {
+    # remove ignored crops
+    # set IFS to line break
+    IFS='
+'
     for blockedItem in $CROP_BLACKLIST; do
         if contains "$2" "$blockedItem"; then
             # echo "$2 is blacklisted by $blockedItem. Skip."
@@ -82,10 +86,10 @@ replacecomma() {
 export CROP_BLACKLIST
 export tmpfile
 export -f contains
-export -f replacecomma
+export -f filteritems
 
 rm "$tmpfile.3" 2> /dev/null
-csvtool call replacecomma "$tmpfile.2" 
+csvtool call filteritems "$tmpfile.2" 
 
 echo "Sort data…"
 # sort data by "value"
@@ -94,12 +98,16 @@ sort --field-separator=',' -n -r --key=3 "$tmpfile.3" > "$tmpfile.4"
 echo "Evaluate data…"
 # get country list
 areas=$( cut -d , -f 1 "$tmpfile.4" | sort | uniq )
+areasOriginal=$( csvtool col 1 "$tmpfile.2" | sed -e 's/,/-/g' | sed -e 's/"//g' | sort | uniq )
+areasNoData=$(echo "$areas
+$areasOriginal" | sort | uniq -u )
 
 rm "$tmpfile.5" 2> /dev/null
 
 # set IFS to line break
-IFS="
-"
+IFS='
+'
+
 for area in $areas; do
     # (try to) get country code
     areaShort=$( convertCountryNameToCode "$area" )
@@ -110,11 +118,6 @@ for area in $areas; do
     
     # extract data from file, form it into one line separated with commas
     crops=$( grep "$area," "$tmpfile.4" | cut -d , -f 2 | uniq | head -n "$MAX_LIST" | tr '\n' ',' | sed -e 's/,/, /g' )
-    
-    if [ "$crops" = "" ]; then
-        echo "No crops for $area could be found. Skip."
-        continue
-    fi
     
     # write data into new file
     # the stripping of the last characters (the last ", ") is not strictly POSIX-compliant, but works in all shells, nowadays
@@ -135,4 +138,13 @@ echo "Finish processing…"
 
 # append sorted data
 sort "$tmpfile.5" >> "$outfile"
+
+if [ "$areasNoData" != "" ]; then
+    {
+        echo "# For these countries, there was data in the source, but due to filtering no crops remained. They were thus skipped."
+        printf "# Ignored: "
+        printf "%s" "$areasNoData" | tr '\n' ',' | sed -e 's/,/, /g'
+    } >> "$outfile"
+fi
+
 # rm -rf "$TMPDIR"
