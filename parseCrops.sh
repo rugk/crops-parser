@@ -131,7 +131,7 @@ echo "Finish processing…"
 {
     echo "# list of most produced/cultivated crops/fruits in the world"
     echo "# source: Food and Agriculture Organization of the United Nations, http://www.fao.org/faostat/en/#data/QC"
-    echo "# created/parsed by script: https://github.com/rugk/crop-parser"
+    echo "# created/parsed by script: https://github.com/rugk/crops-parser"
     echo "# updated at: $( date +'%F' )"
     echo "default: [Sugar cane, Potatoes, Sugar beet, Soybeans, Cassava, Tomatoes]" # source: https://en.wikipedia.org/wiki/Agriculture#Crop_statistics
 } > "$outfile"
