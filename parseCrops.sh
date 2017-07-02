@@ -15,7 +15,7 @@
 # constants
 TMPDIR="/tmp/cropsGenerator"
 MAX_LIST=5
-CROP_BLACKLIST="Total Fruit, Cereals Vegetables Wheat Barley"
+CROP_BLACKLIST="Total Fruit, Cereals Vegetables Wheat Barley Rye Maize Rapeseed Sorghum Millet ', nes' Triticale Oats Oilcrops Oilcakes"
 ISO3166_DB="./iso3166.csv" # (modified)
 
 # contains(string, substring)
@@ -70,9 +70,6 @@ replacecomma() {
     
     # replace comma in area & item columns
     for col in "$1" "$2"; do
-        # remove unneccessary informatioon in brackets
-        # col=$( echo "$col" | sed -e 's/(.*)\h*\(.*\)//g' )
-        
         # remove " and ,
         col=$( echo "$col" | sed -e 's/,/-/g' )
         col=$( echo "$col" | sed -e 's/"//g' )
@@ -112,7 +109,7 @@ for area in $areas; do
     fi
     
     # extract data from file, form it into one line separated with commas
-    crops=$( grep "$area," "$tmpfile.4" | cut -d , -f 2 | sort | uniq | head -n "$MAX_LIST" | tr '\n' ',' | sed -e 's/,/, /g' )
+    crops=$( grep "$area," "$tmpfile.4" | cut -d , -f 2 | uniq | head -n "$MAX_LIST" | tr '\n' ',' | sed -e 's/,/, /g' )
     
     if [ "$crops" = "" ]; then
         echo "No crops for $area could be found. Skip."
@@ -127,6 +124,7 @@ done
 # final steps
 echo "Finish processing…"
 
+# add header
 {
     echo "# list of most produced/cultivated crops/fruits in the world"
     echo "# source: Food and Agriculture Organization of the United Nations, http://www.fao.org/faostat/en/#data/QC"
