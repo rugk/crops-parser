@@ -192,6 +192,7 @@ if [ "$areasNoData" != "" ]; then
         echo "# For these countries, there was data in the source, but due to filtering no crops remained. They were thus skipped."
         printf "# Ignored: "
         printf "%s" "$areasNoData" | tr '\n' ',' | sed -e 's/,/, /g'
+        echo
     } >> "$outfile"
 fi
 
