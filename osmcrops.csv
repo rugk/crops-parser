@@ -1,66 +1,105 @@
-crop name,OSM key,comment,,
-Apples,trees=apple_trees,also possible: crop=apple,,
-Asparagus,crop=asparagus,,,
-Bananas,trees=banana_plants,or: crop=bananas,,
-Cassava,crop=cassava,,,
-Coffee,trees=coffee_plants,also possible: crop=coffee,,
-Grapes,landuse=vineyard,also possible: crop=grape,,
-Hops,trees=hop_plants,Too specific? Cereal?, also possible: crop=hop,
-Kiwi fruit,trees=kiwi_plants,also: crop=kiwi, AFAIK incorrect: trees=kiwi_trees,
-Walnuts,trees=walnut_trees,also possible crop=walnut_trees or crop=nut,,
-Walnuts- with shell,trees=walnut_trees,also possible crop=walnut_trees or crop=nut,,
-Cashew nuts- with shell,trees=cashew_trees,also: crop=nut,,
-Tung nuts,crop=nut,Unspecific?,,
-Pears,trees=pear_trees,also possible: crop=pear,,
-Potatoes,crop=potatoes,,,
-Sugar cane,crop=sugarcane,,,
-Sugar beet,crop=sugar,maybe a bit unspecific??,,
-Sunflower seed,crop=sunflower,"Are sunflower seed fields really sunflower fields?? Also, maybe blacklist?",,
-Tea,trees=tea_plants,or: crop=tea,,
-Cherries,trees=cherry_trees,,,
-"Cherries, sour",trees=cherry_trees,,,
-Coconuts,trees=coconut_palms,,,
-Mangoes- mangosteens- guavas,trees=guava_trees-or-trees=mango_trees,??????,,
-Papayas,trees=papaya_trees,,,
-Pineapples,trees=pineapple_plants,,,
-Agave fibres nes,trees=agave_plants,"source data only has fibres, but that does not matter; or: trees=agave",,
-Avocados,trees=avocado_trees ,,,
-Dates,trees=date_palms,,,
-Figs,trees=fig_trees,,,
-Lemons and limes,trees=lemon_trees,"Botanically not correct, but who can differ lemons and limes on a tree anyway? Also there is no OSM tag for limes.; maybe: trees=lime_trees",,
-Olives,trees=olive_trees,,,
-Oranges,trees=orange_trees,,,
-Almonds- with shell,trees=almond_trees,,,
-Apricots,trees=apricot_trees,,,
-Chestnut,trees=chestnut_trees ,also maybe crop=nut?,,
-Hazelnuts- with shell,trees=hazel_plants,,,
-Peaches and nectarines,trees=peach_trees,"Wiki-EN: “Peach and nectarines are the same species, even though they are regarded commercially as different fruits.”",,
-Persimmons,trees=persimmon_trees,,,
-Pistachios,trees=pistachio_trees,also maybe crop=nut?,,
-Plums and sloes,trees=plum_trees,"A hybrid, basically the same, does not matter here anyway",,
-Rubber- natural,trees=rubber_trees,,,
-Oil- palm,trees=oil_palms,,,
-Oil- palm fruit,trees=oil_palms,,,
-Strawberries,trees=strawberry_plants,,,
-Palm kernels,trees=palm,or: trees=palms, wrong syntax?, theoretically: trees=palm_trees
-Blueberries,trees=blueberry,,,
-???????,trees=bayberry,,,
-???????,trees=blackberry,,,
-Raspberries,trees=raspberry,,,
-???????,trees=coca_plants,,,
-???????,trees=cacao_trees,,,
-Pepper (piper spp.),trees=piper_plants,,,
-???????,trees=nopal_plants,,,
-???????,trees=tamarind,wrong syntax?,,
-Pineapples,trees=pineapple_plants,incorrect: trees=ananas_plants,,
-???????,trees=shal_trees,https://en.wikipedia.org/wiki/Shorea_robusta,,
-???????,trees=blackcurrant_plants,,,
-Tangerines- mandarins- clementines- satsumas,trees=orange_trees,could also be mapped each one under: trees=mandarin_trees,,
-???????,trees=lychee_trees,,,
-???????,trees=sand_pear,,,
-???????,trees=eucalyptus_trees,,,
-???????,trees=pitaya_plants,,,
-???????,trees=cherimoya_trees,,,
-???????,trees=pomegranate_trees,,,
-???????,trees=pecan_trees,also maybe crop=nut?,,
-Rice- paddy,crop=rice,maybe exclude?,,
+crop name,OSM key,comment
+Apples,trees=apple_trees,also possible: crop=apple
+Asparagus,crop=asparagus,
+Bananas,trees=banana_plants,or: crop=bananas
+Cassava,crop=cassava,
+Berries nes,crop=berries,or: crop=berry_plants 
+Coffee,trees=coffee_plants,also possible: crop=coffee
+Coffee- green,trees=coffee_plants,
+Grapes,landuse=vineyard,also possible: crop=grape
+Hops,trees=hop_plants,Too specific? Cereal?;  also possible: crop=hop
+Kiwi fruit,trees=kiwi_plants,also: crop=kiwi;  AFAIK incorrect: trees=kiwi_trees
+Walnuts,trees=walnut_trees,also possible crop=walnut_trees or crop=nut
+Walnuts- with shell,trees=walnut_trees,also possible crop=walnut_trees or crop=nut
+Cashew nuts- with shell,trees=cashew_trees,also: crop=nut
+Tung nuts,crop=nut,Unspecific?
+Pears,trees=pear_trees,also possible: crop=pear
+Potatoes,crop=potatoes,
+Sugar cane,crop=sugarcane,
+Sugar beet,crop=sugar,maybe a bit unspecific??
+Sunflower seed,crop=sunflower,"Are sunflower seed fields really sunflower fields?? Also, maybe blacklist?"
+Tea,trees=tea_plants,or: crop=tea
+Cherries,trees=cherry_trees,
+Cherries- sour,trees=cherry_trees,
+Mangoes- mangosteens- guavas,trees=guava_trees-or-trees=mango_trees,??????
+Papayas,trees=papaya_trees,
+Pineapples,trees=pineapple_plants,
+Agave fibres nes,trees=agave_plants,"source data only has fibres, but that does not matter; or: trees=agave"
+Avocados,trees=avocado_trees ,
+Dates,trees=date_palms,
+Figs,trees=fig_trees,
+Lemons and limes,trees=lemon_trees,"Botanically not correct, but who can differ lemons and limes on a tree anyway? Also there is no OSM tag for limes.; maybe: trees=lime_trees"
+Olives,trees=olive_trees,
+Oranges,trees=orange_trees,
+Almonds- with shell,trees=almond_trees,
+Apricots,trees=apricot_trees,
+Chestnut,trees=chestnut_trees ,also maybe crop=nut?
+Coconuts,trees=coconut_palms,also maybe crop=nut?
+Hazelnuts- with shell,trees=hazel_plants,also maybe crop=nut?
+Pistachios,trees=pistachio_trees,also maybe crop=nut?
+Peaches and nectarines,trees=peach_trees,"Wiki-EN: “Peach and nectarines are the same species, even though they are regarded commercially as different fruits.”"
+Persimmons,trees=persimmon_trees,
+Plums and sloes,trees=plum_trees,"A hybrid, basically the same, does not matter here anyway"
+Rubber- natural,trees=rubber_trees,
+Oil- palm,trees=oil_palms,
+Oil- palm fruit,trees=oil_palms,
+Oilseeds,trees=oil_palms,
+Strawberries,trees=strawberry_plants,
+Palm kernels,trees=palm,or: trees=palms;  wrong syntax?;  theoretically: trees=palm_trees
+Blueberries,trees=blueberry,
+???????,trees=bayberry,
+???????,trees=blackberry,
+Raspberries,trees=raspberry,
+???????,trees=coca_plants,
+Cocoa- beans,trees=cacao_trees,"Note different spelling (cf.: trees=cacao_trees); both spellings possible, but tag used here is more common in OSM"
+Pepper (piper spp.),trees=piper_plants,
+???????,trees=nopal_plants,
+???????,trees=tamarind,wrong syntax?
+Pineapples,trees=pineapple_plants,incorrect: trees=ananas_plants
+???????,trees=shal_trees,https://en.wikipedia.org/wiki/Shorea_robusta
+???????,trees=blackcurrant_plants,
+Tangerines- mandarins- clementines- satsumas,trees=orange_trees,could also be mapped each one under: trees=mandarin_trees
+???????,trees=lychee_trees,
+???????,trees=sand_pear,
+???????,trees=eucalyptus_trees,
+???????,trees=pitaya_plants,
+???????,trees=cherimoya_trees,
+???????,trees=pomegranate_trees,
+???????,trees=pecan_trees,also maybe crop=nut?
+Rice- paddy,crop=rice,
+# CURRENTLY MISSING/UNOFFICIAL/PROPOSALS BELOW,,
+Tomatoes,crop=tomatoe,
+Cabbages and other brassicas,crop=cabbage,
+Onions- dry,crop=onions,
+Tobacco- unmanufactured,crop=tobacco,
+Cucumbers and gherkins,crop=gherkin,
+Carrots and turnips,crop=carrot,Also includes: turnips=https://en.wikipedia.org/wiki/Turnip
+Beans- dry,crop=bean,
+Beans- green,crop=bean,
+String beans,crop=bean,
+Bambara beans,crop=bean,
+Broad beans- horse beans- dry,crop=bean,type of vicia/vetch
+Vetches,crop=bean,either bean or pea…
+Soybeans,crop=soybean,"Maybe it is worth not to include this in beans, generally?"
+Peas- dry,crop=pea,
+Peas- green,crop=pea,
+Chick peas,crop=pea,or separately??
+Cow peas- dry,crop=pea,only grows for one year; maybe exclude?
+Pigeon peas,crop=pea,
+Chillies and peppers- green,crop=pepper,
+Chillies and peppers- dry,crop=pepper,
+Watermelons,crop=watermelon,or only crop=melon? But water & sugar melons are easy to differ…
+Melonseed,crop=melon,
+Melons- other (inc.cantaloupes),crop=melon,
+Sweet potatoes,crop=sweet_potato,"only “distantly” related to usual “potatos”, not even same family!"
+Pumpkins- squash and gourds,crop=pumpkin,
+Groundnuts- with shell,crop=groundnut,This is no nut! Rather potato-like…
+Lettuce and chicory,crop=lettuce,both: Asterales; also belongs here: iceberg lettuce
+Chicory roots,crop=lettuce,
+Cottonseed,crop=cotton,
+Seed cotton,crop=cotton,
+Cotton lint,crop=cotton,
+Garlic,crop=garlic,an allium
+Ginger,crop=ginger,
+Jute & Jute-like Fibres,crop=jute,only grows for one year; maybe exclude?
+Jute,crop=jute,
