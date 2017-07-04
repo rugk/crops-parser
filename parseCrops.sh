@@ -13,13 +13,13 @@
 # 
 
 # constants
-TMPDIR="/tmp/cropsGenerator"
+TMPDIR="/tmp/cropsGenerator-$( tr -dc A-Za-z0-9 < /dev/urandom | head -c5 )"
 MAX_LIST=5
 CROP_BLACKLIST=$( cat crop-blacklist.list )
 ISO3166_DB="./iso3166.csv" # (modified)
 OSM_CROP_KEY_DB="./osmcrops.csv"
 # Convert to OSM keys? 0=no; 1=yes; 2=yes, and skip non-OSM keys
-OSM_HANDLING="1"
+OSM_HANDLING="2"
 
 # contains(string, substring)
 #
@@ -82,8 +82,8 @@ outfile="$2"
 
 echo "Prepare CSV…"
 # extract columns & remove header
-csvtool namedcol Area,Item,Value "$input" > "$tmpfile.1"
-# OR: csvtool col 4,8,12 "$input" > "$tmpfile.1"
+csvtool namedcol Area,Item,Year,Value "$input" > "$tmpfile.1"
+# OR: csvtool col 4,8,10,12 "$input" > "$tmpfile.1"
 csvtool drop 1 "$tmpfile.1" > "$tmpfile.2"
 
 # replace , (comma) in file with different value to ease CSV processing and
@@ -124,7 +124,7 @@ adjustdatasets() {
     fi
     
     # numbers in value column do not need special handling
-    printf "%s,%s,%s\n" "$area" "$item" "$3" >> "$tmpfile.3"
+    printf "%s,%s,%s,%s\n" "$area" "$item" "$3" "$4" >> "$tmpfile.3"
 }
 export OSM_HANDLING
 export OSM_CROP_KEY_DB
@@ -139,13 +139,41 @@ export -f adjustdatasets
 rm "$tmpfile.3" 2> /dev/null
 csvtool call adjustdatasets "$tmpfile.2" 
 
+echo "Sum up duplicate elements…"
+sort "$tmpfile.3" > "$tmpfile.4"
+rm "$tmpfile.5" 2> /dev/null
+
+# reeading file in shell and loop through (sorted) lines
+summedCount=0
+while read -r line; do
+    key=$( echo "$line" | awk -F ',' '{ print $1","$2","$3 }' )
+    value=$( echo "$line" | awk -F ',' '{ print $4 }' )
+    
+    if [ "$key" = "$lastkey" ]; then
+        summedCount=$(( summedCount + 1 ))
+        # if key is the same as last one, sum up values
+        value=$(( lastvalue + value ))
+    else
+        # otherwise write last data
+        printf "%s,%s\n" "$lastkey" "$lastvalue" >> "$tmpfile.5"
+        # and remember/save new values
+        lastkey="$key"
+        lastvalue="$value"
+    fi
+done < "$tmpfile.4"
+# last remembered value still needs to be written
+printf "%s,%s\n" "$lastkey" "$lastvalue" >> "$tmpfile.5"
+echo "Summed up $summedCount duplicates."
+
+areas=$( cut -d , -f 1,2,3 "$tmpfile.5" | sort | uniq -D  )
+
 echo "Sort data…"
 # sort data by "value"
-sort --field-separator=',' -n -r --key=3 "$tmpfile.3" > "$tmpfile.4"
+sort --field-separator=',' -n -r --key=4 "$tmpfile.5" > "$tmpfile.6"
 
 echo "Evaluate data…"
 # get country list
-areas=$( cut -d , -f 1 "$tmpfile.4" | sort | uniq )
+areas=$( cut -d , -f 1 "$tmpfile.6" | sort | uniq )
 areasOriginal=$( csvtool col 1 "$tmpfile.2" | simplifyCsvKey | sort | uniq )
 areasNoData=$(echo "$areas
 $areasOriginal" | sort | uniq -u )
@@ -165,7 +193,7 @@ for area in $areas; do
     fi
     
     # extract data from file, form it into one line separated with commas
-    crops=$( grep "$area," "$tmpfile.4" | cut -d , -f 2 | uniq | head -n "$MAX_LIST" | tr '\n' ',' | sed -e 's/,/, /g' )
+    crops=$( grep "$area," "$tmpfile.6" | cut -d , -f 2 | uniq | head -n "$MAX_LIST" | tr '\n' ',' | sed -e 's/,/, /g' )
     
     # write data into new file
     # the stripping of the last characters (the last ", ") is not strictly POSIX-compliant, but works in all shells, nowadays
