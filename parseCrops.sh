@@ -19,7 +19,9 @@ CROP_BLACKLIST=$( cat crop-blacklist.list )
 ISO3166_DB="./iso3166.csv" # (modified)
 OSM_CROP_KEY_DB="./osmcrops.csv"
 # Convert to OSM keys? 0=no; 1=yes; 2=yes, and skip non-OSM keys
-OSM_HANDLING="2"
+OSM_HANDLING="1"
+# add path to file here to collect missing OSM keys, only works if OSM_HANDLING != 0
+OSM_COLLECT_MISSING="" # result/missingOSM.list
 
 # contains(string, substring)
 #
@@ -110,11 +112,15 @@ adjustdatasets() {
         itemOsm=$( convertCropToOsmKey "$item" )
         
         if [ "$itemOsm" = "" ]; then
+            if [ "$OSM_COLLECT_MISSING" != "" ]; then
+                echo "$item" >> "$TMPDIR/osmmissing.csv"
+            fi
+
             if [ $OSM_HANDLING -ge 2 ]; then
                 # skip keys
                 return
             # else
-                # only show warning
+                # show warning
                 # echo "WARNING: No OSM key found for $item. (counry: $area)"
             fi
         else
@@ -129,6 +135,8 @@ adjustdatasets() {
 export OSM_HANDLING
 export OSM_CROP_KEY_DB
 export CROP_BLACKLIST
+export TMPDIR
+export OSM_COLLECT_MISSING
 export tmpfile
 export -f contains
 export -f getFromCsv
@@ -209,7 +217,7 @@ echo "Finish processing…"
     echo "# source: Food and Agriculture Organization of the United Nations, http://www.fao.org/faostat/en/#data/QC"
     echo "# created/parsed by script: https://github.com/rugk/crops-parser"
     echo "# updated at: $( date +'%F' )"
-    echo "default: [crop=sugarcane, crop=potatoes, crop=sugar, Soybeans, crop=cassava, Tomatoes]" # source: https://en.wikipedia.org/wiki/Agriculture#Crop_statistics
+    echo "default: []"
 } > "$outfile"
 
 # append sorted data
@@ -222,6 +230,11 @@ if [ "$areasNoData" != "" ]; then
         printf "%s" "$areasNoData" | tr '\n' ',' | sed -e 's/,/, /g'
         echo
     } >> "$outfile"
+fi
+
+# sort missing OSM
+if [ "$OSM_COLLECT_MISSING" != "" ]; then
+    sort < "$TMPDIR/osmmissing.csv" | uniq -c | sort -n -r > "$OSM_COLLECT_MISSING"
 fi
 
 # rm -rf "$TMPDIR"

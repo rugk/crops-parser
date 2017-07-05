@@ -2,7 +2,7 @@
 # source: Food and Agriculture Organization of the United Nations, http://www.fao.org/faostat/en/#data/QC
 # created/parsed by script: https://github.com/rugk/crops-parser
 # updated at: 2017-07-05
-default: [crop=sugarcane, crop=potatoes, crop=sugar, Soybeans, crop=cassava, Tomatoes]
+default: []
 AE: [trees=date_palms, Sorghum, Tomatoes, Cucumbers and gherkins, Tomatoes]
 AF: [Wheat, landuse=vineyard, Rice- paddy, Barley, Rice- paddy]
 AG: [trees=guava_trees-or-trees=mango_trees, Melons- other (inc.cantaloupes), Tomatoes, trees=lemon_trees-or-trees=lime_trees, Eggplants (aubergines)]
