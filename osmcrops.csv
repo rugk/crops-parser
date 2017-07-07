@@ -14,7 +14,6 @@ Cashew nuts- with shell,trees=cashew_trees,also: crop=nut
 Cashewapple,trees=cashew_trees,also: crop=nut (see above)
 Tung nuts,crop=nut,Unspecific?
 Pears,trees=pear_trees,also possible: crop=pear
-Potatoes,crop=potatoes,
 Tea,trees=tea_plants,or: crop=tea
 Cherries,trees=cherry_trees,
 Cherries- sour,trees=cherry_trees,
@@ -41,7 +40,7 @@ Rubber- natural,trees=rubber_trees,
 Oil- palm,trees=oil_palms,
 Oil- palm fruit,trees=oil_palms,
 Oilseeds,trees=oil_palms,
-Palm kernels,trees=palm,or: trees=palms; wrong syntax?;  theoretically: trees=palm_trees
+Palm kernels,trees=palms,or: trees=palm; wrong syntax?;  theoretically: trees=palm_trees
 Blueberries,trees=blueberry,
 ???????,trees=bayberry,
 ???????,trees=blackberry,
@@ -71,8 +70,9 @@ Jute,crop=jute,
 Nutmeg- mace and cardamoms,trees=nutmeg_trees,
 Vanilla,crop=vanilla,
 Sisal,crop=sisal,
-Cinnamon,crop=cinnamon,grows on trees
+Cinnamon,crop=cinnamon,"grows ‘on’ trees (bark), maybe not really an orchard"
 Kola nuts,trees=kola_trees,
 Maté,trees=mate_plants,
 Jojoba seed,trees=jojoba_plants,
 Cranberries,trees=cranberry,
+Grapefruit (inc. pomelos),trees=grapefruit_trees,
