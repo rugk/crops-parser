@@ -19,7 +19,7 @@ CROP_BLACKLIST=$( cat crop-blacklist.list )
 ISO3166_DB="./iso3166.csv" # (modified)
 OSM_CROP_KEY_DB="./osmcrops.csv"
 # Convert to OSM keys? 0=no; 1=yes; 2=yes, and skip non-OSM keys
-OSM_HANDLING="1"
+OSM_HANDLING="2"
 # add path to file here to collect missing OSM keys, only works if OSM_HANDLING != 0
 OSM_COLLECT_MISSING="" # result/missingOSM.list
 
@@ -201,7 +201,7 @@ for area in $areas; do
     fi
     
     # extract data from file, form it into one line separated with commas
-    crops=$( grep "$area," "$tmpfile.6" | cut -d , -f 2 | uniq | head -n "$MAX_LIST" | tr '\n' ',' | sed -e 's/,/, /g' )
+    crops=$( grep "$area," "$tmpfile.6" | cut -d , -f 2 | uniq | head -n "$MAX_LIST" | tr '\n' ',' | tr '|' ',' | sed -e 's/,/, /g' )
     
     # write data into new file
     # the stripping of the last characters (the last ", ") is not strictly POSIX-compliant, but works in all shells, nowadays

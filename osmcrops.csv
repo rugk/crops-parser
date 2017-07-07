@@ -1,78 +1,78 @@
-crop name,OSM key,comment,,
-Apples,trees=apple_trees,also possible: crop=apple,,
-Bananas,trees=banana_plants,or: crop=bananas,,
-Coffee,trees=coffee_plants,also possible: crop=coffee,,
-Coffee- green,trees=coffee_plants,,,
-Grapes,landuse=vineyard,also possible: crop=grape, should retag,
-Hops,trees=hop_plants,Too specific? Cereal?, also possible: crop=hop,
-Kiwi fruit,trees=kiwi_plants,also: crop=kiwi, AFAIK incorrect: trees=kiwi_trees,
-Walnuts,trees=walnut_trees,also possible crop=walnut_trees or crop=nut,,
-Walnuts- with shell,trees=walnut_trees,also possible crop=walnut_trees or crop=nut,,
-Brazil nuts- with shell,crop=nut,,,
-Areca nuts,crop=nut,grows on special palms, too general?,
-Cashew nuts- with shell,trees=cashew_trees,also: crop=nut,,
-Cashewapple,trees=cashew_trees,also: crop=nut (see above),,
-Tung nuts,crop=nut,Unspecific?,,
-Pears,trees=pear_trees,also possible: crop=pear,,
-Potatoes,crop=potatoes,,,
-Tea,trees=tea_plants,or: crop=tea,,
-Cherries,trees=cherry_trees,,,
-Cherries- sour,trees=cherry_trees,,,
-Mangoes- mangosteens- guavas,trees=guava_trees-or-trees=mango_trees,??????,,
-Papayas,trees=papaya_trees,,,
-Pineapples,trees=pineapple_plants,,,
-Agave fibres nes,trees=agave_plants,"source data only has fibres, but that does not matter; or: trees=agave",,
-Avocados,trees=avocado_trees ,,,
-Dates,trees=date_palms,,,
-Figs,trees=fig_trees,,,
-Lemons and limes,trees=lemon_trees-or-trees=lime_trees,,,
-Olives,trees=olive_trees,,,
-Oranges,trees=orange_trees,,,
-Almonds- with shell,trees=almond_trees,,,
-Apricots,trees=apricot_trees,,,
-Chestnut,trees=chestnut_trees ,also maybe crop=nut?,,
-Coconuts,trees=coconut_palms,also maybe crop=nut?,,
-Hazelnuts- with shell,trees=hazel_plants,also maybe crop=nut?,,
-Pistachios,trees=pistachio_trees,also maybe crop=nut?,,
-Peaches and nectarines,trees=peach_trees,"Wiki-EN: “Peach and nectarines are the same species, even though they are regarded commercially as different fruits.”",,
-Persimmons,trees=persimmon_trees,,,
-Plums and sloes,trees=plum_trees,"A hybrid, basically the same, does not matter here anyway",,
-Rubber- natural,trees=rubber_trees,,,
-Oil- palm,trees=oil_palms,,,
-Oil- palm fruit,trees=oil_palms,,,
-Oilseeds,trees=oil_palms,,,
-Palm kernels,trees=palm,or: trees=palms,  wrong syntax?,  theoretically: trees=palm_trees
-Blueberries,trees=blueberry,,,
-???????,trees=bayberry,,,
-???????,trees=blackberry,,,
-Raspberries,trees=raspberry,,,
-Strawberries,crop=strawberry,,,
-???????,trees=coca_plants,,,
-Cocoa- beans,trees=cacao_trees,"Note different spelling (cf.: trees=cacao_trees); both spellings possible, but tag used here is more common in OSM",,
-Pepper (piper spp.),trees=piper_plants,,,
-???????,trees=nopal_plants,,,
-???????,trees=tamarind,wrong syntax?,,
-Pineapples,trees=pineapple_plants,incorrect: trees=ananas_plants,,
-???????,trees=shal_trees,https://en.wikipedia.org/wiki/Shorea_robusta,,
-???????,trees=blackcurrant_plants,,,
-Tangerines- mandarins- clementines- satsumas,trees=orange_trees,could also be mapped each one under: trees=mandarin_trees,,
-???????,trees=lychee_trees,,,
-???????,trees=sand_pear,,,
-???????,trees=eucalyptus_trees,,,
-???????,trees=pitaya_plants,,,
-???????,trees=cherimoya_trees,,,
-???????,trees=pomegranate_trees,,,
-???????,trees=pecan_trees,also maybe crop=nut?,,
-# CURRENTLY MISSING/UNOFFICIAL/PROPOSALS BELOW,,,,
-Chillies and peppers- green,crop=pepper,,,
-Chillies and peppers- dry,crop=pepper,,,
-Jute & Jute-like Fibres,crop=jute,only grows for one year,,
-Jute,crop=jute,,,
-Nutmeg- mace and cardamoms,trees=nutmeg_trees,,,
-Vanilla,crop=vanilla,,,
-Sisal,crop=sisal,,,
-Cinnamon,crop=cinnamon,grows on trees,,
-Kola nuts,trees=kola_trees,,,
-Maté,trees=mate_plants,,,
-Jojoba seed,trees=jojoba_plants,,,
-Cranberries,trees=cranberry,,,
+crop name,OSM key,comment
+Apples,trees=apple_trees,also possible: crop=apple
+Bananas,trees=banana_plants,or: crop=bananas
+Coffee,trees=coffee_plants,also possible: crop=coffee
+Coffee- green,trees=coffee_plants,
+Grapes,landuse=vineyard,also possible: crop=grape; should retag
+Hops,trees=hop_plants,Too specific? Cereal?;  also possible: crop=hop
+Kiwi fruit,trees=kiwi_plants,also: crop=kiwi; AFAIK incorrect: trees=kiwi_trees
+Walnuts,trees=walnut_trees,also possible crop=walnut_trees or crop=nut
+Walnuts- with shell,trees=walnut_trees,also possible crop=walnut_trees or crop=nut
+Brazil nuts- with shell,crop=nut,
+Areca nuts,crop=nut,grows on special palms; too general?
+Cashew nuts- with shell,trees=cashew_trees,also: crop=nut
+Cashewapple,trees=cashew_trees,also: crop=nut (see above)
+Tung nuts,crop=nut,Unspecific?
+Pears,trees=pear_trees,also possible: crop=pear
+Potatoes,crop=potatoes,
+Tea,trees=tea_plants,or: crop=tea
+Cherries,trees=cherry_trees,
+Cherries- sour,trees=cherry_trees,
+Mangoes- mangosteens- guavas,trees=guava_trees|trees=mango_trees,
+Papayas,trees=papaya_trees,
+Pineapples,trees=pineapple_plants,
+Agave fibres nes,trees=agave_plants,"source data only has fibres, but that does not matter; or: trees=agave"
+Avocados,trees=avocado_trees ,
+Dates,trees=date_palms,
+Figs,trees=fig_trees,
+Lemons and limes,trees=lemon_trees|trees=lime_trees,
+Olives,trees=olive_trees,
+Oranges,trees=orange_trees,
+Almonds- with shell,trees=almond_trees,
+Apricots,trees=apricot_trees,
+Chestnut,trees=chestnut_trees ,also maybe crop=nut?
+Coconuts,trees=coconut_palms,also maybe crop=nut?
+Hazelnuts- with shell,trees=hazel_plants,also maybe crop=nut?
+Pistachios,trees=pistachio_trees,also maybe crop=nut?
+Peaches and nectarines,trees=peach_trees,"Wiki-EN: “Peach and nectarines are the same species, even though they are regarded commercially as different fruits.”"
+Persimmons,trees=persimmon_trees,
+Plums and sloes,trees=plum_trees,"A hybrid, basically the same, does not matter here anyway"
+Rubber- natural,trees=rubber_trees,
+Oil- palm,trees=oil_palms,
+Oil- palm fruit,trees=oil_palms,
+Oilseeds,trees=oil_palms,
+Palm kernels,trees=palm,or: trees=palms; wrong syntax?;  theoretically: trees=palm_trees
+Blueberries,trees=blueberry,
+???????,trees=bayberry,
+???????,trees=blackberry,
+Raspberries,trees=raspberry,
+Strawberries,crop=strawberry,
+???????,trees=coca_plants,
+Cocoa- beans,trees=cacao_trees,"Note different spelling (cf.: trees=cacao_trees); both spellings possible, but tag used here is more common in OSM"
+Pepper (piper spp.),trees=piper_plants,
+???????,trees=nopal_plants,
+???????,trees=tamarind,wrong syntax?
+Pineapples,trees=pineapple_plants,incorrect: trees=ananas_plants
+???????,trees=shal_trees,https://en.wikipedia.org/wiki/Shorea_robusta
+???????,trees=blackcurrant_plants,
+Tangerines- mandarins- clementines- satsumas,trees=orange_trees,could also be mapped each one under: trees=mandarin_trees
+???????,trees=lychee_trees,
+???????,trees=sand_pear,
+???????,trees=eucalyptus_trees,
+???????,trees=pitaya_plants,
+???????,trees=cherimoya_trees,
+???????,trees=pomegranate_trees,
+???????,trees=pecan_trees,also maybe crop=nut?
+# CURRENTLY MISSING/UNOFFICIAL/PROPOSALS BELOW,,
+Chillies and peppers- green,crop=pepper,
+Chillies and peppers- dry,crop=pepper,
+Jute & Jute-like Fibres,crop=jute,only grows for one year
+Jute,crop=jute,
+Nutmeg- mace and cardamoms,trees=nutmeg_trees,
+Vanilla,crop=vanilla,
+Sisal,crop=sisal,
+Cinnamon,crop=cinnamon,grows on trees
+Kola nuts,trees=kola_trees,
+Maté,trees=mate_plants,
+Jojoba seed,trees=jojoba_plants,
+Cranberries,trees=cranberry,
