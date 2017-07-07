@@ -19,7 +19,7 @@ CROP_BLACKLIST=$( cat crop-blacklist.list )
 ISO3166_DB="./iso3166.csv" # (modified)
 OSM_CROP_KEY_DB="./osmcrops.csv"
 # Convert to OSM keys? 0=no; 1=yes; 2=yes, and skip non-OSM keys
-OSM_HANDLING="2"
+OSM_HANDLING="1"
 # add path to file here to collect missing OSM keys, only works if OSM_HANDLING != 0
 OSM_COLLECT_MISSING="" # result/missingOSM.list
 
@@ -153,6 +153,7 @@ rm "$tmpfile.5" 2> /dev/null
 
 # reeading file in shell and loop through (sorted) lines
 summedCount=0
+lastkey=""
 while read -r line; do
     key=$( echo "$line" | awk -F ',' '{ print $1","$2","$3 }' )
     value=$( echo "$line" | awk -F ',' '{ print $4 }' )
@@ -163,7 +164,7 @@ while read -r line; do
         value=$(( lastvalue + value ))
     else
         # otherwise write last data
-        printf "%s,%s\n" "$lastkey" "$lastvalue" >> "$tmpfile.5"
+        [ "$lastkey" != "" ] && printf "%s,%s\n" "$lastkey" "$lastvalue" >> "$tmpfile.5"
         # and remember/save new values
         lastkey="$key"
         lastvalue="$value"
@@ -173,20 +174,43 @@ done < "$tmpfile.4"
 printf "%s,%s\n" "$lastkey" "$lastvalue" >> "$tmpfile.5"
 echo "Summed up $summedCount duplicates."
 
-areas=$( cut -d , -f 1,2,3 "$tmpfile.5" | sort | uniq -D  )
+echo "Calculate yearly average…"
+rm "$tmpfile.6" 2> /dev/null
+
+# reading file in shell and loop through lines
+count=1
+lastkey=""
+while read -r line; do
+    key=$( echo "$line" | awk -F ',' '{ print $1","$2 }' )
+    value=$( echo "$line" | awk -F ',' '{ print $4 }' )
+    
+    if [ "$key" = "$lastkey" ]; then
+        count=$(( count + 1 ))
+        # calculate average
+        valuesum="$(( valuesum + value ))"
+    else
+        # otherwise write last data
+        [ "$lastkey" != "" ] && printf "%s,%s\n" "$lastkey" "$(( valuesum / count ))" >> "$tmpfile.6"
+        # and remember/save new values
+        count=1
+        lastkey="$key"
+        valuesum="$value"
+    fi
+done < "$tmpfile.5"
+# last remembered value still needs to be written
+printf "%s,%s\n" "$lastkey" "$(( valuesum / count ))" >> "$tmpfile.6"
 
 echo "Sort data…"
+# first remove duplicates from different 
 # sort data by "value"
-sort --field-separator=',' -n -r --key=4 "$tmpfile.5" > "$tmpfile.6"
+sort --field-separator=',' -n -r --key=3 "$tmpfile.6" > "$tmpfile.7"
 
 echo "Evaluate data…"
 # get country list
-areas=$( cut -d , -f 1 "$tmpfile.6" | sort | uniq )
+areas=$( cut -d , -f 1 "$tmpfile.7" | sort | uniq )
 areasOriginal=$( csvtool col 1 "$tmpfile.2" | simplifyCsvKey | sort | uniq )
 areasNoData=$(echo "$areas
 $areasOriginal" | sort | uniq -u )
-
-rm "$tmpfile.5" 2> /dev/null
 
 # set IFS to line break
 IFS='
@@ -201,11 +225,11 @@ for area in $areas; do
     fi
     
     # extract data from file, form it into one line separated with commas
-    crops=$( grep "$area," "$tmpfile.6" | cut -d , -f 2 | uniq | head -n "$MAX_LIST" | tr '\n' ',' | tr '|' ',' | sed -e 's/,/, /g' )
+    crops=$( grep "$area," "$tmpfile.7" | cut -d , -f 2 | uniq | head -n "$MAX_LIST" | tr '\n' ',' | tr '|' ',' | sed -e 's/,/, /g' )
     
     # write data into new file
     # the stripping of the last characters (the last ", ") is not strictly POSIX-compliant, but works in all shells, nowadays
-    printf "%s: [%s]\n" "$areaShort" "${crops:0:-2}" >> "$tmpfile.5"
+    printf "%s: [%s]\n" "$areaShort" "${crops:0:-2}" >> "$tmpfile.8"
 done
 
 # final steps
@@ -221,7 +245,7 @@ echo "Finish processing…"
 } > "$outfile"
 
 # append sorted data
-sort "$tmpfile.5" >> "$outfile"
+sort "$tmpfile.8" >> "$outfile"
 
 if [ "$areasNoData" != "" ]; then
     {
@@ -237,4 +261,4 @@ if [ "$OSM_COLLECT_MISSING" != "" ]; then
     sort < "$TMPDIR/osmmissing.csv" | uniq -c | sort -n -r > "$OSM_COLLECT_MISSING"
 fi
 
-# rm -rf "$TMPDIR"
+rm -rf "$TMPDIR"

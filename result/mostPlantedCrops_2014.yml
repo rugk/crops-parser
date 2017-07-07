@@ -218,4 +218,4 @@ ZA: [Sugar cane, Maize, crop=potatoes, landuse=vineyard, Wheat]
 ZM: [Sugar cane, Maize, Cassava, Soybeans, Wheat]
 ZW: [Sugar cane, Maize, Cassava, Sorghum, Cottonseed]
 # For these countries, there was data in the source, but due to filtering no crops remained. They were thus skipped.
-# Ignored: , Saint Helena- Ascension and Tristan da Cunha
+# Ignored: Saint Helena- Ascension and Tristan da Cunha

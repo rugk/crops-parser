@@ -22,7 +22,7 @@ Mangoes- mangosteens- guavas,trees=guava_trees|trees=mango_trees,
 Papayas,trees=papaya_trees,
 Pineapples,trees=pineapple_plants,
 Agave fibres nes,trees=agave_plants,"source data only has fibres, but that does not matter; or: trees=agave"
-Avocados,trees=avocado_trees ,
+Avocados,trees=avocado_trees,
 Dates,trees=date_palms,
 Figs,trees=fig_trees,
 Lemons and limes,trees=lemon_trees|trees=lime_trees,
@@ -30,7 +30,7 @@ Olives,trees=olive_trees,
 Oranges,trees=orange_trees,
 Almonds- with shell,trees=almond_trees,
 Apricots,trees=apricot_trees,
-Chestnut,trees=chestnut_trees ,also maybe crop=nut?
+Chestnut,trees=chestnut_trees,also maybe crop=nut?
 Coconuts,trees=coconut_palms,also maybe crop=nut?
 Hazelnuts- with shell,trees=hazel_plants,also maybe crop=nut?
 Pistachios,trees=pistachio_trees,also maybe crop=nut?
