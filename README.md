@@ -29,11 +29,11 @@ This is an overview of what happens:
 * `Sum up duplicate elements…` – Finds exact duplicates (considering the year too) and sums them up. Afterwards reports the sucess. (Usually items should only be summed up when converting OSM tags.)
 * `Calculate yearly average…` – Calculates the average tonnes in produc tion when multiple years are given.
 * `Sort data…` – It sorts the whole data according to the tonnes of produced crops, independent of the country.
-* `Evaluate data…` – It extracts all crops for each country and transforms the first five crops listet into the YAML format. Additionally it replaces the country name with the 2-letter country code (ISO 3166).
+* `Evaluate data…` – It extracts all crops for each country and transforms the first fifteen crops listet into the YAML format. Additionally it replaces the country name with the 2-letter country code (ISO 3166).
 * `Finish processing…` – It adds the header and default crops and sorts the YAML another time, so the countries are sorted.
 
 ## Result
 
-The results can be seen in the directory [result](result). Both data from 2014 and from 2013/2014 are included, but in the end they do not differ that much for the top entries at least. (often the 5th entry or so differs)
+The results can be seen in the directory [result](result). Both data from 2014 and from 2013/2014 are included.
 
 IThe script can handle multiple data from multiple years quite well. After summing up equal items per year (and country) it later calculates the average of the production numbers from both years.
