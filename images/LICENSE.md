@@ -20,4 +20,17 @@
 * [`avocado.jpg`](avocado.jpg): CC-BY-SA 3.0 https://commons.wikimedia.org/wiki/File:Persea_americana_fruit_2.JPG
 * [`apricot.jpg`](apricot.jpg): CC-BY-SA 3.0 https://commons.wikimedia.org/wiki/File:Apricots.jpg
 * [`cherry.jpg`](cherry.jpg): CC-BY-SA 3.0 https://commons.wikimedia.org/wiki/File:Kt_xx_0011_ubt.jpeg
+* [`papaya.jpg`](papaya.jpg): CC-BY-SA 3.0 https://commons.wikimedia.org/wiki/File:Papaya_BW_1.jpg
+* [`cacao.jpg`](cacao.jpg): Public Domain https://commons.wikimedia.org/wiki/File:Cocoa_Pods.JPG
+* [`walnut.jpg`](walnut.jpg): CC-BY-SA 2.0 https://commons.wikimedia.org/wiki/File:Juglans_regia_Echte_Walnussfrucht_1.jpg
+* [`oil-palm.jpg`](oil-palm.jpg): CC-BY-SA 2.5 https://commons.wikimedia.org/wiki/File:Elaeis_guineensis_MS_3467.jpg
+* [`fig.jpg`](fig.jpg): CC-BY-SA 3.0 https://commons.wikimedia.org/wiki/File:Grappe_de_figues.jpg
+* [`tea.jpg`](tea.jpg): CC-BY-SA 3.0 https://commons.wikimedia.org/wiki/File:Camellia_sinensis_(Boltz_Conservatory).JPG
+* [`almond.jpg`](almond.jpg): CC-BY-SA 2.0 https://commons.wikimedia.org/wiki/File:Madrigueras_(20578932389)_(cropped).jpg
+* [`raspberry.jpg`](raspberry.jpg): CC-BY-SA 4.0 https://commons.wikimedia.org/wiki/File:Himbeeren_am_Strauch.JPG
+* [`palm.jpg`](palm.jpg): CC-BY-SA 3.0 https://commons.wikimedia.org/wiki/File:Dictyosperma_album1.JPG
+
+
+
+
 
