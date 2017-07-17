@@ -13,6 +13,11 @@
 * [`ananas.jpg`](ananas.jpg): CC0 https://commons.wikimedia.org/wiki/File:Ananas_jardin_Martinique.jpg
 * [`pear.jpg`](pear.jpg): Public Domain https://commons.wikimedia.org/wiki/File:Pears.jpg
 * [`plum.jpg`](plum.jpg): CC0 https://www.pexels.com/photo/shallow-focus-photograph-purple-round-fruit-209378/
-
-
+* [`coffee.jpg`](coffee.jpg): CC-BY-SA 3.0 https://commons.wikimedia.org/wiki/File:Bourbon_Coffee.jpg
+* [`peach.jpg`](peach.jpg): CC-BY-SA 3.0 https://commons.wikimedia.org/wiki/File:Prunus_persica_-_Peach_Hungary.jpg
+* [`grapefruit.jpg`](grapefruit.jpg): CC-BY-SA 3.0 https://commons.wikimedia.org/wiki/File:Grapefruit.ebola.jpeg
+* [`strawberry.jpg`](strawberry.jpg): CC-BY-SA 2.0 https://commons.wikimedia.org/wiki/File:Strawberries.JPG
+* [`avocado.jpg`](avocado.jpg): CC-BY-SA 3.0 https://commons.wikimedia.org/wiki/File:Persea_americana_fruit_2.JPG
+* [`apricot.jpg`](apricot.jpg): CC-BY-SA 3.0 https://commons.wikimedia.org/wiki/File:Apricots.jpg
+* [`cherry.jpg`](cherry.jpg): CC-BY-SA 3.0 https://commons.wikimedia.org/wiki/File:Kt_xx_0011_ubt.jpeg
 
