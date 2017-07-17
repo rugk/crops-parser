@@ -12,7 +12,7 @@
 * [`grape2.jpg`](grape2.jpg): CC-BY 2.0 https://www.flickr.com/photos/95171055@N08/8665878268/
 * [`ananas.jpg`](ananas.jpg): CC0 https://commons.wikimedia.org/wiki/File:Ananas_jardin_Martinique.jpg
 * [`pear.jpg`](pear.jpg): Public Domain https://commons.wikimedia.org/wiki/File:Pears.jpg
-* [`plum.jpg`](plum.jpg): CC0 https://www.pexels.com/photo/shallow-focus-photograph-purple-round-fruit-209378/
+* [`plum.jpg`](plum.jpg): CC0 https://commons.wikimedia.org/wiki/File:Pflaumen.JPG
 * [`coffee.jpg`](coffee.jpg): CC-BY-SA 3.0 https://commons.wikimedia.org/wiki/File:Bourbon_Coffee.jpg
 * [`peach.jpg`](peach.jpg): CC-BY-SA 3.0 https://commons.wikimedia.org/wiki/File:Prunus_persica_-_Peach_Hungary.jpg
 * [`grapefruit.jpg`](grapefruit.jpg): CC-BY-SA 3.0 https://commons.wikimedia.org/wiki/File:Grapefruit.ebola.jpeg
