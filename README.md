@@ -36,4 +36,4 @@ This is an overview of what happens:
 
 The results can be seen in the directory [result](result). Both data from 2014 and from 2013/2014 are included.
 
-IThe script can handle multiple data from multiple years quite well. After summing up equal items per year (and country) it later calculates the average of the production numbers from both years.
+The script can handle multiple data from multiple years quite well. After summing up equal items per year (and country) it later calculates the average of the production numbers from both years.
