@@ -11,3 +11,8 @@
 * [`grape1.jpg`](grape1.jpg): CC-BY 2.0 https://www.flickr.com/photos/liridon_selmani/17968620571
 * [`grape2.jpg`](grape2.jpg): CC-BY 2.0 https://www.flickr.com/photos/95171055@N08/8665878268/
 * [`ananas.jpg`](ananas.jpg): CC0 https://commons.wikimedia.org/wiki/File:Ananas_jardin_Martinique.jpg
+* [`pear.jpg`](pear.jpg): Public Domain https://commons.wikimedia.org/wiki/File:Pears.jpg
+* [`plum.jpg`](plum.jpg): CC0 https://www.pexels.com/photo/shallow-focus-photograph-purple-round-fruit-209378/
+
+
+
