@@ -1,5 +1,5 @@
 # licenses and sources for images
-* [`pepper.jpg`](pepper.jpg): CC-BY-SA https://de.wikipedia.org/wiki/Datei:Thai_peppers.jpg
+* [`pepper.jpg`](pepper.jpg): CC-BY-SA 3.0 https://de.wikipedia.org/wiki/Datei:Thai_peppers.jpg
 * [`banana.jpg`](banana.jpg): CC-BY-SA 3.0 https://commons.wikimedia.org/wiki/File:Musa-sp3.1.jpg
 * [`orange.jpg`](orange.jpg): CC-BY-SA 3.0 https://commons.wikimedia.org/wiki/File:OrangeBloss_wb.jpg
 * [`lemon.jpg`](lemon.jpg): CC-BY-SA 3.0 https://commons.wikimedia.org/wiki/File:Limonu.jpg
@@ -19,7 +19,7 @@
 * [`strawberry.jpg`](strawberry.jpg): CC-BY-SA 2.0 https://commons.wikimedia.org/wiki/File:Strawberries.JPG
 * [`avocado.jpg`](avocado.jpg): CC-BY-SA 3.0 https://commons.wikimedia.org/wiki/File:Persea_americana_fruit_2.JPG
 * [`apricot.jpg`](apricot.jpg): CC-BY-SA 3.0 https://commons.wikimedia.org/wiki/File:Apricots.jpg
-* [`cherry.jpg`](cherry.jpg): CC-BY-SA 3.0 https://commons.wikimedia.org/wiki/File:Kt_xx_0011_ubt.jpeg
+* [`cherry.jpg`](cherry.jpg): CC-BY-SA 4.0 https://commons.wikimedia.org/wiki/File:2_cherries.jpg
 * [`papaya.jpg`](papaya.jpg): CC-BY-SA 3.0 https://commons.wikimedia.org/wiki/File:Papaya_BW_1.jpg
 * [`cacao.jpg`](cacao.jpg): Public Domain https://commons.wikimedia.org/wiki/File:Cocoa_Pods.JPG
 * [`walnut.jpg`](walnut.jpg): CC-BY-SA 2.0 https://commons.wikimedia.org/wiki/File:Juglans_regia_Echte_Walnussfrucht_1.jpg
