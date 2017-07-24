@@ -8,7 +8,7 @@
 * [`mango.jpg`](mango.jpg): CC-BY-SA 3.0 https://commons.wikimedia.org/wiki/File:Mango_Maya.jpg
 * [`coconut.jpg`](coconut.jpg): CC-BY 2.0 https://www.flickr.com/photos/3336/148713113
 * [`apple.jpg`](apple.jpg): CC0 https://www.pexels.com/photo/close-up-of-fruits-hanging-on-tree-257840/
-* [`grape.jpg`](grape.jpg): CC-BY 2.0 https://www.flickr.com/photos/liridon_selmani/17968620571
+* [`grape.jpg`](grape.jpg): CC0 https://pixabay.com/de/weintrauben-rotwein-weinberg-1717387/
 * [`ananas.jpg`](ananas.jpg): CC0 https://commons.wikimedia.org/wiki/File:Ananas_jardin_Martinique.jpg
 * [`pear.jpg`](pear.jpg): Public Domain https://commons.wikimedia.org/wiki/File:Pears.jpg
 * [`plum.jpg`](plum.jpg): CC0 https://commons.wikimedia.org/wiki/File:Pflaumen.JPG
