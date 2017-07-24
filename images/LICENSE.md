@@ -32,6 +32,14 @@
 * [`nut.jpg`](nut.jpg): CC-BY-SA 3.0 https://commons.wikimedia.org/wiki/File:Fancy_raw_mixed_nuts_macro.jpg
 * [`kiwi.jpg`](kiwi.jpg): CC-BY-SA 3.0 https://commons.wikimedia.org/wiki/File:Actinidia_chinensis4.jpg
 * [`blueberry.jpg`](blueberry.jpg): Public Domain https://commons.wikimedia.org/wiki/File:PattsBlueberries.jpg
+* [`piper.jpg`](piper.jpg): CC-BY-SA 3.0 https://commons.wikimedia.org/wiki/File:Piper_nigrum001.JPG
+* [`olive.jpg`](olive.jpg): CC-BY 3.0 https://commons.wikimedia.org/wiki/File:Olea_europaea_01_by-dpc.jpg
+* [`date.jpg`](date.jpg): CC-BY-SA 3.0 https://commons.wikimedia.org/wiki/File:Dates005.jpg
+* [`rubber.jpg`](rubber.jpg): CC0 https://pixabay.com/de/harz-harzgewinnung-baum-baumrinde-2290750/
+* [`cashew.jpg`](cashew.jpg): CC-BY-SA 3.0 https://de.wikipedia.org/wiki/Datei:Cashew_apples.jpg
+* [`hop.jpg`](hop.jpg): CC-BY-SA 3.0 https://commons.wikimedia.org/wiki/File:Hopfendolde-mit-hopfengarten.jpg
+* [`hazel.jpg`](hazel.jpg): CC-BY-SA 3.0 https://commons.wikimedia.org/wiki/File:Haselnuss_Gr_99.jpg
+* [`hazel_with_nut.jpg`](hazel_with_nut.jpg): CC-BY-SA 3.0 https://commons.wikimedia.org/wiki/File:Haselnuss_Gr_99.jpg and CC-BY-SA 3.0 https://commons.wikimedia.org/wiki/File:Haselnuss_Gr_99.jpg
 
 
 
