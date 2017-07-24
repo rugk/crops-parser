@@ -27,7 +27,7 @@
 * [`fig.jpg`](fig.jpg): CC-BY-SA 3.0 https://commons.wikimedia.org/wiki/File:Grappe_de_figues.jpg
 * [`tea.jpg`](tea.jpg): CC-BY-SA 3.0 https://commons.wikimedia.org/wiki/File:Camellia_sinensis_(Boltz_Conservatory).JPG
 * [`almond.jpg`](almond.jpg): CC-BY-SA 2.0 https://commons.wikimedia.org/wiki/File:Madrigueras_(20578932389)_(cropped).jpg
-* [`raspberry.jpg`](raspberry.jpg): CC-BY-SA 4.0 https://commons.wikimedia.org/wiki/File:Himbeeren_am_Strauch.JPG
+* [`raspberry.jpg`](raspberry.jpg): CC0 https://pixabay.com/de/obst-himbeeren-garten-2292701/
 * [`palm.jpg`](palm.jpg): CC-BY-SA 3.0 https://commons.wikimedia.org/wiki/File:Dictyosperma_album1.JPG
 * [`nut.jpg`](nut.jpg): CC-BY-SA 3.0 https://commons.wikimedia.org/wiki/File:Fancy_raw_mixed_nuts_macro.jpg
 * [`kiwi.jpg`](kiwi.jpg): CC-BY-SA 3.0 https://commons.wikimedia.org/wiki/File:Actinidia_chinensis4.jpg
