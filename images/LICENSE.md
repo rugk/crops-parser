@@ -8,8 +8,7 @@
 * [`mango.jpg`](mango.jpg): CC-BY-SA 3.0 https://commons.wikimedia.org/wiki/File:Mango_Maya.jpg
 * [`coconut.jpg`](coconut.jpg): CC-BY 2.0 https://www.flickr.com/photos/3336/148713113
 * [`apple.jpg`](apple.jpg): CC0 https://www.pexels.com/photo/close-up-of-fruits-hanging-on-tree-257840/
-* [`grape1.jpg`](grape1.jpg): CC-BY 2.0 https://www.flickr.com/photos/liridon_selmani/17968620571
-* [`grape2.jpg`](grape2.jpg): CC-BY 2.0 https://www.flickr.com/photos/95171055@N08/8665878268/
+* [`grape.jpg`](grape.jpg): CC-BY 2.0 https://www.flickr.com/photos/liridon_selmani/17968620571
 * [`ananas.jpg`](ananas.jpg): CC0 https://commons.wikimedia.org/wiki/File:Ananas_jardin_Martinique.jpg
 * [`pear.jpg`](pear.jpg): Public Domain https://commons.wikimedia.org/wiki/File:Pears.jpg
 * [`plum.jpg`](plum.jpg): CC0 https://commons.wikimedia.org/wiki/File:Pflaumen.JPG
@@ -42,4 +41,14 @@
 * [`hazel_with_nut.jpg`](hazel_with_nut.jpg): CC-BY-SA 3.0 https://commons.wikimedia.org/wiki/File:Haselnuss_Gr_99.jpg and CC-BY-SA 3.0 https://commons.wikimedia.org/wiki/File:Haselnuss_Gr_99.jpg
 * [`chestnut.jpg`](chestnut.jpg): CC-BY-SA 3.0 https://commons.wikimedia.org/wiki/File:Chataigne.JPG
 * [`sisal.jpg`](sisal.jpg): CC-BY 2.0 https://www.flickr.com/photos/agecombahia/5189770130
+* [`pistachio.jpg`](pistachio.jpg): CC-BY-SA 3.0 https://commons.wikimedia.org/wiki/File:Pistacchio_di_Bronte.jpg
+* [`nutmeg.jpg`](nutmeg.jpg): CC-BY-SA 4.0 https://commons.wikimedia.org/wiki/File:Myris_fragr_Fr_080112-3290_ltn.jpg
+* [`jute.jpg`](jute.jpg): CC-BY 2.0 https://commons.wikimedia.org/wiki/File:Jute_field.jpg
+* [`persimmon.jpg`](persimmon.jpg): CC0 https://pixabay.com/de/herbst-persimone-persimmon-1994084/
+* [`vanilla.jpg`](vanilla.jpg): CC-BY-SA 3.0 https://commons.wikimedia.org/wiki/File:Vanilla_pompona_01.jpg
+* [`cranberry.jpg`](cranberry.jpg): CC-BY-SA 4.0 https://commons.wikimedia.org/wiki/File:Ecomare_-_cranberry_in_de_duinen_(cranberry-duinpark-sd).jpg
+* [`agave.jpg`](agave.jpg): CC-BY-SA 3.0 https://en.wikipedia.org/wiki/File:Agave_americana_R01.jpg
+* [`kola.jpg`](kola.jpg): CC-BY-SA 3.0 https://commons.wikimedia.org/wiki/File:Fruits_of_Cola_nitida.JPG
+* [`mate.jpg`](mate.jpg): CC-BY-SA 3.0 https://commons.wikimedia.org/wiki/File:Yerba_Mate.jpg
+* [`jojoba.jpg`](jojoba.jpg): CC-BY 2.0 https://de.wikipedia.org/wiki/Datei:Jojoba_Nut_-_Flickr_-_treegrow.jpg
 
