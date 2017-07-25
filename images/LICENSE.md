@@ -38,7 +38,6 @@
 * [`cashew.jpg`](cashew.jpg): CC-BY-SA 3.0 https://de.wikipedia.org/wiki/Datei:Cashew_apples.jpg
 * [`hop.jpg`](hop.jpg): CC-BY-SA 3.0 https://commons.wikimedia.org/wiki/File:Hopfendolde-mit-hopfengarten.jpg
 * [`hazel.jpg`](hazel.jpg): CC-BY-SA 3.0 https://commons.wikimedia.org/wiki/File:Haselnuss_Gr_99.jpg
-* [`hazel_with_nut.jpg`](hazel_with_nut.jpg): CC-BY-SA 3.0 https://commons.wikimedia.org/wiki/File:Haselnuss_Gr_99.jpg and CC-BY-SA 3.0 https://commons.wikimedia.org/wiki/File:Haselnuss_Gr_99.jpg
 * [`chestnut.jpg`](chestnut.jpg): CC-BY-SA 3.0 https://commons.wikimedia.org/wiki/File:Chataigne.JPG
 * [`sisal.jpg`](sisal.jpg): CC-BY 2.0 https://www.flickr.com/photos/agecombahia/5189770130
 * [`pistachio.jpg`](pistachio.jpg): CC-BY-SA 3.0 https://commons.wikimedia.org/wiki/File:Pistacchio_di_Bronte.jpg
