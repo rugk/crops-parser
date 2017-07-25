@@ -37,3 +37,8 @@ This is an overview of what happens:
 The results can be seen in the directory [result](result). Both data from 2014 and from 2013/2014 are included.
 
 The script can handle multiple data from multiple years quite well. After summing up equal items per year (and country) it later calculates the average of the production numbers from both years.
+
+## Extras
+
+Additionally, there is a collection of square images of all "OSM fruits", which are included in the top-15. You can find it in the directory [`images`](images/).
+

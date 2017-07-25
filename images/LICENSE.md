@@ -34,7 +34,7 @@
 * [`piper.jpg`](piper.jpg): CC-BY-SA 3.0 https://commons.wikimedia.org/wiki/File:Piper_nigrum001.JPG
 * [`olive.jpg`](olive.jpg): CC-BY 3.0 https://commons.wikimedia.org/wiki/File:Olea_europaea_01_by-dpc.jpg
 * [`date.jpg`](date.jpg): CC-BY-SA 3.0 https://commons.wikimedia.org/wiki/File:Dates005.jpg
-* [`rubber.jpg`](rubber.jpg): CC0 https://pixabay.com/de/harz-harzgewinnung-baum-baumrinde-2290750/
+* [`rubber.jpg`](rubber.jpg): CC-BY-SA 3.0 https://commons.wikimedia.org/wiki/File:Latex_-_Hevea_-_Cameroun.JPG
 * [`cashew.jpg`](cashew.jpg): CC-BY-SA 3.0 https://de.wikipedia.org/wiki/Datei:Cashew_apples.jpg
 * [`hop.jpg`](hop.jpg): CC-BY-SA 3.0 https://commons.wikimedia.org/wiki/File:Hopfendolde-mit-hopfengarten.jpg
 * [`hazel.jpg`](hazel.jpg): CC-BY-SA 3.0 https://commons.wikimedia.org/wiki/File:Haselnuss_Gr_99.jpg
