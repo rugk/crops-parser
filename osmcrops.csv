@@ -4,7 +4,7 @@ Bananas,trees=banana_plants,orchard,or: crop=bananas
 Coffee,trees=coffee_plants,orchard,also possible: crop=coffee
 Coffee- green,trees=coffee_plants,orchard,
 Grapes,landuse=vineyard,,also possible: crop=grape; should retag
-Hops,trees=hop_plants,farmland,Too specific? Cereal?;  also possible: crop=hop
+Hops,trees=hop_plants,orchard,Too specific? Cereal?;  also possible: crop=hop
 Kiwi fruit,trees=kiwi_plants,orchard,also: crop=kiwi; AFAIK incorrect: trees=kiwi_trees
 Walnuts,trees=walnut_trees,orchard,also possible crop=walnut_trees or crop=nut
 Walnuts- with shell,trees=walnut_trees,orchard,also possible crop=walnut_trees or crop=nut
