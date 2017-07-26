@@ -65,8 +65,6 @@ Tangerines- mandarins- clementines- satsumas,trees=orange_trees,orchard,could al
 # CURRENTLY MISSING/UNOFFICIAL/PROPOSALS BELOW,,orchard,
 Chillies and peppers- green,crop=pepper,orchard,
 Chillies and peppers- dry,crop=pepper,orchard,
-Jute & Jute-like Fibres,crop=jute,farmland,only grows for one year
-Jute,crop=jute,farmland,
 Nutmeg- mace and cardamoms,trees=nutmeg_trees,orchard,
 Vanilla,crop=vanilla,orchard,
 Sisal,crop=sisal,farmland,
