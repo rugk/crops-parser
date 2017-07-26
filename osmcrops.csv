@@ -22,7 +22,6 @@ Papayas,trees=papaya_trees,orchard,
 Pineapples,trees=pineapple_plants,orchard,
 Agave fibres nes,trees=agave_plants,orchard,"source data only has fibres, but that does not matter; or: trees=agave"
 Avocados,trees=avocado_trees,orchard,
-Dates,trees=date_palms,orchard,
 Figs,trees=fig_trees,orchard,
 Lemons and limes,trees=lemon_trees|trees=lime_trees,orchard,
 Olives,trees=olive_trees,orchard,
@@ -30,7 +29,6 @@ Oranges,trees=orange_trees,orchard,
 Almonds- with shell,trees=almond_trees,orchard,
 Apricots,trees=apricot_trees,orchard,
 Chestnut,trees=chestnut_trees,orchard,also maybe crop=nut?
-Coconuts,trees=coconut_palms,orchard,also maybe crop=nut?
 Hazelnuts- with shell,trees=hazel_plants,orchard,also maybe crop=nut?
 Pistachios,trees=pistachio_trees,orchard,also maybe crop=nut?
 Peaches and nectarines,trees=peach_trees,orchard,"Wiki-EN: “Peach and nectarines are the same species, even though they are regarded commercially as different fruits.”"
@@ -40,7 +38,9 @@ Rubber- natural,trees=rubber_trees,orchard,
 Oil- palm,trees=oil_palms,orchard,
 Oil- palm fruit,trees=oil_palms,orchard,
 Oilseeds,trees=oil_palms,orchard,
-Palm kernels,trees=palms,orchard,or: trees=palm; wrong syntax?;  theoretically: trees=palm_trees
+Palm kernels,trees=oil_palms,orchard,usually the “palm cake” is only a side product of palm oil production; tagging them differently or as “palms” (unspecific) could be confusing
+Coconuts,trees=coconut_palms,orchard,also maybe crop=nut?
+Dates,trees=date_palms,orchard,
 Blueberries,trees=blueberry,orchard,
 ???????,trees=bayberry,orchard,
 ???????,trees=blackberry,orchard,
