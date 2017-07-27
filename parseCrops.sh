@@ -102,6 +102,12 @@ adjustdatasets() {
             return
         fi
     done
+    
+    # filter out 0 values
+    if [ "$4" = "0" ]; then
+        # echo "$2 is zero. Skip."
+        return
+    fi
 
     # replace comma in area & item columns
     area=$( printf "%s" "$1" | simplifyCsvKey )
