@@ -1,4 +1,6 @@
 # licenses and sources for images
+All images are cropped and possibly resized.
+
 * [`pepper.jpg`](pepper.jpg): CC-BY-SA 3.0 https://de.wikipedia.org/wiki/Datei:Thai_peppers.jpg
 * [`banana.jpg`](banana.jpg): CC-BY-SA 3.0 https://commons.wikimedia.org/wiki/File:Musa-sp3.1.jpg
 * [`orange.jpg`](orange.jpg): CC-BY-SA 3.0 https://commons.wikimedia.org/wiki/File:OrangeBloss_wb.jpg
@@ -42,7 +44,6 @@
 * [`sisal.jpg`](sisal.jpg): CC-BY 2.0 https://www.flickr.com/photos/agecombahia/5189770130
 * [`pistachio.jpg`](pistachio.jpg): CC-BY-SA 3.0 https://commons.wikimedia.org/wiki/File:Pistacchio_di_Bronte.jpg
 * [`nutmeg.jpg`](nutmeg.jpg): CC-BY-SA 4.0 https://commons.wikimedia.org/wiki/File:Myris_fragr_Fr_080112-3290_ltn.jpg
-* [`jute.jpg`](jute.jpg): CC-BY 2.0 https://commons.wikimedia.org/wiki/File:Jute_field.jpg
 * [`persimmon.jpg`](persimmon.jpg): CC0 https://pixabay.com/de/herbst-persimone-persimmon-1994084/
 * [`vanilla.jpg`](vanilla.jpg): CC-BY-SA 3.0 https://commons.wikimedia.org/wiki/File:Vanilla_pompona_01.jpg
 * [`cranberry.jpg`](cranberry.jpg): CC-BY-SA 4.0 https://commons.wikimedia.org/wiki/File:Ecomare_-_cranberry_in_de_duinen_(cranberry-duinpark-sd).jpg
@@ -50,4 +51,5 @@
 * [`kola.jpg`](kola.jpg): CC-BY-SA 3.0 https://commons.wikimedia.org/wiki/File:Fruits_of_Cola_nitida.JPG
 * [`mate.jpg`](mate.jpg): CC-BY-SA 3.0 https://commons.wikimedia.org/wiki/File:Yerba_Mate.jpg
 * [`jojoba.jpg`](jojoba.jpg): CC-BY 2.0 https://de.wikipedia.org/wiki/Datei:Jojoba_Nut_-_Flickr_-_treegrow.jpg
+* [`tomatoe.jpg`](tomatoe.jpg): CC-BY-SA 3.0 https://commons.wikimedia.org/wiki/File:Solanum_lycopersicum_%27Cronos%27,_tomaat_%27Cronos%27.jpg
 
