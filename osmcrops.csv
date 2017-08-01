@@ -1,77 +1,77 @@
-crop name,OSM key,landuse key,comment
-Apples,trees=apple_trees,orchard,also possible: crop=apple
-Bananas,trees=banana_plants,orchard,or: crop=bananas
-Coffee,trees=coffee_plants,orchard,also possible: crop=coffee
-Coffee- green,trees=coffee_plants,orchard,
-Grapes,landuse=vineyard,,also possible: crop=grape; should retag
-Hops,trees=hop_plants,orchard,Too specific? Cereal?;  also possible: crop=hop
-Kiwi fruit,trees=kiwi_plants,orchard,also: crop=kiwi; AFAIK incorrect: trees=kiwi_trees
-Walnuts,trees=walnut_trees,orchard,also possible crop=walnut_trees or crop=nut
-Walnuts- with shell,trees=walnut_trees,orchard,also possible crop=walnut_trees or crop=nut
-Brazil nuts- with shell,crop=nut,orchard,
-Areca nuts,crop=nut,orchard,grows on special palms; too general?
-Cashew nuts- with shell,trees=cashew_trees,orchard,also: crop=nut
-Cashewapple,trees=cashew_trees,orchard,also: crop=nut (see above)
-Tung nuts,crop=nut,orchard,Unspecific?
-Pears,trees=pear_trees,orchard,also possible: crop=pear
-Tea,trees=tea_plants,orchard,or: crop=tea
-Cherries,trees=cherry_trees,orchard,
-Cherries- sour,trees=cherry_trees,orchard,
-Mangoes- mangosteens- guavas,trees=guava_trees|trees=mango_trees,orchard,
-Papayas,trees=papaya_trees,orchard,
-Pineapples,trees=pineapple_plants,orchard,
-Agave fibres nes,trees=agave_plants,orchard,"source data only has fibres, but that does not matter; or: trees=agave"
-Avocados,trees=avocado_trees,orchard,
-Figs,trees=fig_trees,orchard,
-Lemons and limes,trees=lemon_trees|trees=lime_trees,orchard,
-Olives,trees=olive_trees,orchard,
-Oranges,trees=orange_trees,orchard,
-Almonds- with shell,trees=almond_trees,orchard,
-Apricots,trees=apricot_trees,orchard,
-Chestnut,trees=chestnut_trees,orchard,also maybe crop=nut?
-Hazelnuts- with shell,trees=hazel_plants,orchard,also maybe crop=nut?
-Pistachios,trees=pistachio_trees,orchard,also maybe crop=nut?
-Peaches and nectarines,trees=peach_trees,orchard,"Wiki-EN: “Peach and nectarines are the same species, even though they are regarded commercially as different fruits.”"
-Persimmons,trees=persimmon_trees,orchard,
-Plums and sloes,trees=plum_trees,orchard,"A hybrid, basically the same, does not matter here anyway"
-Rubber- natural,trees=rubber_trees,orchard,
-Oil- palm,trees=oil_palms,orchard,
-Oil- palm fruit,trees=oil_palms,orchard,
-Oilseeds,trees=oil_palms,orchard,
-Palm kernels,trees=oil_palms,orchard,usually the “palm cake” is only a side product of palm oil production; tagging them differently or as “palms” (unspecific) could be confusing
-Coconuts,trees=coconut_palms,orchard,also maybe crop=nut?
-Dates,trees=date_palms,orchard,
-Blueberries,trees=blueberry,orchard,
-???????,trees=bayberry,orchard,
-???????,trees=blackberry,orchard,
-Raspberries,trees=raspberry,orchard,
-Strawberries,crop=strawberry,orchard,
-???????,trees=coca_plants,orchard,
-Cocoa- beans,trees=cacao_trees,orchard,"Note different spelling (cf.: trees=cacao_trees); both spellings possible, but tag used here is more common in OSM"
-Pepper (piper spp.),trees=piper_plants,orchard,
-???????,trees=nopal_plants,orchard,
-???????,trees=tamarind,orchard,wrong syntax?
-Pineapples,trees=pineapple_plants,orchard,incorrect: trees=ananas_plants
-???????,trees=shal_trees,orchard,https://en.wikipedia.org/wiki/Shorea_robusta
-???????,trees=blackcurrant_plants,orchard,
-Tangerines- mandarins- clementines- satsumas,trees=orange_trees,orchard,could also be mapped each one under: trees=mandarin_trees
-???????,trees=lychee_trees,orchard,
-???????,trees=sand_pear,orchard,
-???????,trees=eucalyptus_trees,orchard,
-???????,trees=pitaya_plants,orchard,
-???????,trees=cherimoya_trees,orchard,
-???????,trees=pomegranate_trees,orchard,
-???????,trees=pecan_trees,orchard,also maybe crop=nut?
-# CURRENTLY MISSING/UNOFFICIAL/PROPOSALS BELOW,,orchard,
-Chillies and peppers- green,crop=pepper,orchard,
-Chillies and peppers- dry,crop=pepper,orchard,
-Nutmeg- mace and cardamoms,trees=nutmeg_trees,orchard,
-Vanilla,crop=vanilla,orchard,
-Sisal,crop=sisal,farmland,
-Cinnamon,crop=cinnamon,orchard,"grows ‘on’ trees (bark), maybe not really an orchard"
-Kola nuts,trees=kola_trees,orchard,
-Maté,trees=mate_plants,orchard,
-Jojoba seed,trees=jojoba_plants,orchard,
-Cranberries,trees=cranberry,orchard,
-Grapefruit (inc. pomelos),trees=grapefruit_trees,orchard,
-Tomatoes,crop=tomatoe,MAYBE building=greenhouse,
+crop name,key (OSM produce value),OSM trees-key value,landuse key,comment
+Apples,apple,apple_trees,orchard,
+Bananas,banana,banana_plants,orchard,
+Coffee,coffee,coffee_plants,orchard,
+Coffee- green,coffee,coffee_plants,orchard,
+Grapes,grape,,vineyard,should retag as landuse=vineyard
+Hops,hop,hop_plants,orchard,
+Kiwi fruit,kiwi,kiwi_plants,orchard,
+Walnuts,walnut,walnut_trees,orchard,
+Walnuts- with shell,walnut,walnut_trees,orchard,
+Brazil nuts- with shell,nut,,orchard,Too unspecific?
+Areca nuts,nut,,orchard,Too unspecific?
+Cashew nuts- with shell,cashew_nut,cashew_trees,orchard,
+Cashewapple,cashew_nut,cashew_trees,orchard,
+Tung nuts,nut,,orchard,Too unspecific?
+Pears,pear,pear_trees,orchard,
+Tea,tea,tea_plants,orchard,
+Cherries,cherry,cherry_trees,orchard,
+Cherries- sour,cherry,cherry_trees,orchard,
+Mangoes- mangosteens- guavas,guava|mango|mangosteen,guava_trees|mango_trees|mangosteen_trees,orchard,
+Papayas,papaya,papaya_trees,orchard,
+Pineapples,pineapple,pineapple_plants,orchard,
+Agave fibres nes,agave,agave_plants,orchard,"source data only has fibres, but that does not matter"
+Avocados,avocado,avocado_trees,orchard,
+Figs,fig,fig_trees,orchard,
+Lemons and limes,lemon|lime,lemon_trees|lime_trees,orchard,
+Olives,olive,olive_trees,orchard,
+Oranges,orange,orange_trees,orchard,
+Almonds- with shell,almond,almond_trees,orchard,
+Apricots,apricot,apricot_trees,orchard,
+Chestnut,chestnut,chestnut_trees,orchard,
+Hazelnuts- with shell,hazelnut,hazel_plants,orchard,
+Pistachios,pistachio,pistachio_trees,orchard,
+Peaches and nectarines,peach,peach_trees,orchard,"Wiki-EN: “Peach and nectarines are the same species, even though they are regarded commercially as different fruits.”"
+Persimmons,persimmon,persimmon_trees,orchard,
+Plums and sloes,plum,plum_trees,orchard,"A hybrid, basically the same, does not matter here anyway"
+Rubber- natural,rubber,rubber_trees,orchard,
+Oil- palm,palm_oil,oil_palms,orchard,
+Oil- palm fruit,palm_oil,oil_palms,orchard,
+Oilseeds,palm_oil,oil_palms,orchard,
+Palm kernels,palm_oil,oil_palms,orchard,usually the “palm cake” is only a side product of palm oil production; tagging them differently or as “palms” (unspecific) could be confusing
+Coconuts,coconut,coconut_palms,orchard,
+Dates,date,date_palms,orchard,
+Blueberries,blueberry,,orchard,
+???????,bayberry,,orchard,
+???????,blackberry,,orchard,
+Raspberries,raspberry,,orchard,
+Strawberries,strawberry,,orchard,
+???????,coca_leaf,coca_plants,orchard,
+Cocoa- beans,cacao,cacao_trees,orchard,"Note different spelling (cf.: trees=cacao_trees); both spellings possible, but tag used here is more common in OSM"
+Pepper (piper spp.),pepper,piper_plants,orchard,
+???????,nopal,nopal_plants,orchard,
+???????,tamarind,tamarind_trees,orchard,
+Pineapples,pineapple,pineapple_plants,orchard,incorrect: trees=ananas_plants
+???????,,shal_trees,orchard,https://en.wikipedia.org/wiki/Shorea_robusta
+???????,blackcurrant,blackcurrant_plants,orchard,
+Tangerines- mandarins- clementines- satsumas,orange,orange_trees,orchard,could also be mapped each one under: trees=mandarin_trees
+???????,lychee,lychee_trees,orchard,
+???????,sand_pear,sand_pear_trees,orchard,
+???????,,eucalyptus_trees,orchard,
+???????,pitaya,pitaya_plants,orchard,
+???????,cherimoya,cherimoya_trees,orchard,
+???????,pomegranate,pomegranate_trees,orchard,
+???????,pecan_nut,pecan_trees,orchard,
+# CURRENTLY MISSING/UNOFFICIAL/PROPOSALS BELOW,,,orchard,
+Chillies and peppers- green,chilli,pepper_plants,orchard,
+Chillies and peppers- dry,chilli,pepper_plants,orchard,
+Nutmeg- mace and cardamoms,nutmeg,nutmeg_trees,orchard,
+Vanilla,vanilla,,orchard,
+Sisal,sisal,,farmland,
+Cinnamon,cinnamon,,orchard,"grows ‘on’ trees (bark), maybe not really an orchard"
+Kola nuts,kola_nut,kola_trees,orchard,
+Maté,mate,mate_plants,orchard,
+Jojoba seed,jojoba,jojoba_plants,orchard,
+Cranberries,cranberry,,orchard,
+Grapefruit (inc. pomelos),grapefruit,grapefruit_trees,orchard,
+Tomatoes,tomatoe,,orchard,often in greenhouses
