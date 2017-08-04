@@ -1,9 +1,10 @@
 crop name,OSM key,landuse key,comment
 Apples,trees=apple_trees,orchard,also possible: crop=apple
 Bananas,trees=banana_plants,orchard,or: crop=bananas
+Plantains and others,trees=banana_plants,orchard,
 Coffee,trees=coffee_plants,orchard,also possible: crop=coffee
 Coffee- green,trees=coffee_plants,orchard,
-Grapes,landuse=vineyard,,also possible: crop=grape; should retag
+Grapes,landuse=vineyard,vineyard,
 Hops,trees=hop_plants,orchard,Too specific? Cereal?;  also possible: crop=hop
 Kiwi fruit,trees=kiwi_plants,orchard,also: crop=kiwi; AFAIK incorrect: trees=kiwi_trees
 Walnuts,trees=walnut_trees,orchard,also possible crop=walnut_trees or crop=nut
@@ -13,8 +14,8 @@ Areca nuts,crop=nut,orchard,grows on special palms; too general?
 Cashew nuts- with shell,trees=cashew_trees,orchard,also: crop=nut
 Cashewapple,trees=cashew_trees,orchard,also: crop=nut (see above)
 Tung nuts,crop=nut,orchard,Unspecific?
-Pears,trees=pear_trees,orchard,also possible: crop=pear
-Tea,trees=tea_plants,orchard,or: crop=tea
+Pears,trees=pear_trees,orchard,
+Tea,crop=tea,orchard,
 Cherries,trees=cherry_trees,orchard,
 Cherries- sour,trees=cherry_trees,orchard,
 Mangoes- mangosteens- guavas,trees=guava_trees|trees=mango_trees,orchard,
@@ -31,21 +32,17 @@ Apricots,trees=apricot_trees,orchard,
 Chestnut,trees=chestnut_trees,orchard,also maybe crop=nut?
 Hazelnuts- with shell,trees=hazel_plants,orchard,also maybe crop=nut?
 Pistachios,trees=pistachio_trees,orchard,also maybe crop=nut?
-Peaches and nectarines,trees=peach_trees,orchard,"Wiki-EN: ‚ÄúPeach and nectarines are the same species, even though they are regarded commercially as different fruits.‚Äù"
+Peaches and nectarines,trees=peach_trees,orchard,"Wiki-EN: ìPeach and nectarines are the same species, even though they are regarded commercially as different fruits.î"
 Persimmons,trees=persimmon_trees,orchard,
 Plums and sloes,trees=plum_trees,orchard,"A hybrid, basically the same, does not matter here anyway"
 Rubber- natural,trees=rubber_trees,orchard,
 Oil- palm,trees=oil_palms,orchard,
 Oil- palm fruit,trees=oil_palms,orchard,
 Oilseeds,trees=oil_palms,orchard,
-Palm kernels,trees=oil_palms,orchard,usually the ‚Äúpalm cake‚Äù is only a side product of palm oil production; tagging them differently or as ‚Äúpalms‚Äù (unspecific) could be confusing
+Palm kernels,trees=oil_palms,orchard,usually the ìpalm cakeî is only a side product of palm oil production; tagging them differently or as ìpalmsî (unspecific) could be confusing
 Coconuts,trees=coconut_palms,orchard,also maybe crop=nut?
 Dates,trees=date_palms,orchard,
-Blueberries,trees=blueberry,orchard,
-???????,trees=bayberry,orchard,
-???????,trees=blackberry,orchard,
-Raspberries,trees=raspberry,orchard,
-Strawberries,crop=strawberry,orchard,
+???????,crop=bayberry,farmland,
 ???????,trees=coca_plants,orchard,
 Cocoa- beans,trees=cacao_trees,orchard,"Note different spelling (cf.: trees=cacao_trees); both spellings possible, but tag used here is more common in OSM"
 Pepper (piper spp.),trees=piper_plants,orchard,
@@ -53,7 +50,6 @@ Pepper (piper spp.),trees=piper_plants,orchard,
 ???????,trees=tamarind,orchard,wrong syntax?
 Pineapples,trees=pineapple_plants,orchard,incorrect: trees=ananas_plants
 ???????,trees=shal_trees,orchard,https://en.wikipedia.org/wiki/Shorea_robusta
-???????,trees=blackcurrant_plants,orchard,
 Tangerines- mandarins- clementines- satsumas,trees=orange_trees,orchard,could also be mapped each one under: trees=mandarin_trees
 ???????,trees=lychee_trees,orchard,
 ???????,trees=sand_pear,orchard,
@@ -68,10 +64,86 @@ Chillies and peppers- dry,crop=pepper,orchard,
 Nutmeg- mace and cardamoms,trees=nutmeg_trees,orchard,
 Vanilla,crop=vanilla,orchard,
 Sisal,crop=sisal,farmland,
-Cinnamon,crop=cinnamon,orchard,"grows ‚Äòon‚Äô trees (bark), maybe not really an orchard"
+Cinnamon,crop=cinnamon,orchard,"grows ëoní trees (bark), maybe not really an orchard"
+Cinnamon (canella),crop=cinnamon,orchard,
 Kola nuts,trees=kola_trees,orchard,
-Mat√©,trees=mate_plants,orchard,
+MatÈ,trees=mate_plants,orchard,
 Jojoba seed,trees=jojoba_plants,orchard,
-Cranberries,trees=cranberry,orchard,
 Grapefruit (inc. pomelos),trees=grapefruit_trees,orchard,
-Tomatoes,crop=tomatoe,MAYBE building=greenhouse,
+Tomatoes,crop=tomato,MAYBE building=greenhouse,
+Carobs,trees=carob_trees,orchard,
+# Berry fruit,,,
+Cranberries,crop=cranberry,farmland/bog,
+Blueberries,crop=blueberry,farmland,
+Blackberries,crop=blackberry,farmland,
+Raspberries,crop=raspberry,farmland,
+Strawberries,crop=strawberry,farmland,
+Currants,crop=currants,farmland,
+# Cereals,,,
+Grain- mixed,crop=cereal,farmland,
+Rice,crop=rice,farmland,
+Rice- paddy,crop=rice rice=paddy,farmland,
+Maize,crop=corn,farmland,
+Maize- green,crop=corn,farmland,
+Wheat,crop=wheat,farmland,
+Triticale,crop=triticale,farmland,
+Barley,crop=barley,farmland,
+Rye,crop=rye,farmland,
+Oats,crop=oat,farmland,
+Sorghum,crop=sorghum,farmland,
+Millet,crop=millet,farmland,
+Buckwheat,crop=buckwheat,farmland,a pseudocereal
+Quinoa,crop=quinoa,farmland,a pseudocereal
+#Legumes,,,
+Soybeans,crop=soy,farmland,
+Beans- dry,crop=beans,farmland,
+Beans- green,crop=beans,farmland,
+Bambara beans,crop=beans,farmland,
+Broad beans- horse beans- dry,crop=beans,farmland,
+Chick peas,crop=chickpeas,farmland,
+Peas- dry,crop=peas,farmland,
+Peas- green,crop=peas,farmland,
+Cow peas- dry,crop=peas,farmland,
+Pigeon peas,crop=peas,farmland,
+Lentils,crop=lentils,farmland,
+Vetches,crop=vetches,farmland,
+#Oil crops,,,
+Rapeseed,crop=rape,farmland,
+Sunflower seed,crop=sunflower,farmland,
+Linseed,crop=flax,farmland,
+#Sugar plants,,,
+Sugar beet,crop=sugar_beet,farmland,
+Sugar cane,crop=sugarcane,farmland,
+#Other foodcrops,,,
+Potatoes,crop=potatoes,farmland,
+Sweet potatoes,crop=sweet_potatoes,farmland,
+Cassava,crop=cassava,farmland,
+Yams,crop=yams,farmland,
+Taro (cocoyam),crop=taro,farmland,
+#Melons,,,
+Watermelons,crop=melons,farmland,
+Melons- other (inc.cantaloupes),crop=melons,farmland,
+Melonseed,crop=melons,farmland,
+#Other cash crops,,,
+Seed cotton,crop=cotton,farmland,
+Tobacco- unmanufactured,crop=tobacco,farmland,
+#Vegetables,,,
+Carrots and turnips,crop=vegetables,farmland,maybe add vegetables=carrots|turnips
+Cucumbers and gherkins,crop=vegetables,farmland,vegetables=cucumber
+Pumpkins- squash and gourds,crop=pumpkin,farmland,pumpkin=edible or ornamental
+Cabbages and other brassicas,crop=brassica,farmland,not so misleading as crop=cabbage
+Cauliflowers and broccoli,crop=brassica,farmland,
+Lettuce and chicory,crop=lettuce,farmland,
+Chicory roots,crop=lettuce,farmland,
+Spinach,crop=spinach,farmland,
+Eggplants (aubergines),crop=eggplant,farmland,
+Onions- dry,crop=onions,farmland,
+Onions- shallots- green,crop=onions,farmland,
+Garlic,crop=garlic,farmland,
+Okra,crop=okra,farmland,
+#Spices,,,
+Mustard seed,crop=mustard,farmland,
+Sesame seed,crop=sesame,farmland,
+Ginger,crop=ginger,farmland,
+#Nuts,,,
+Groundnuts- with shell,crop=peanut,farmland,
