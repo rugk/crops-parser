@@ -4,7 +4,8 @@ All images are cropped and possibly resized.
 * [`areca_nut.jpg`](areca_nut.jpg): CC-BY-SA 2.5 https://commons.wikimedia.org/wiki/File:Betel_nut_tree.JPG
 * [`tung_nut.jpg`](tung_nut.jpg): CC-BY-SA 3.0 https://commons.wikimedia.org/wiki/File:Vernicia_fordii5.jpg
 * [`brazil_nut.jpg`](brazil_nut.jpg): CC-BY 2.0 https://commons.wikimedia.org/wiki/File:%22Bertholetia_excelsa%22_Castanha-do-Par%C3%A1_Brazil-nuts_tree_2.jpg
-* [`pepper.jpg`](pepper.jpg): CC-BY-SA 3.0 https://de.wikipedia.org/wiki/Datei:Thai_peppers.jpg
+* [`chili.jpg`](chili.jpg): CC-BY-SA 3.0 https://de.wikipedia.org/wiki/Datei:Thai_peppers.jpg
+* [`pepper.jpg`](pepper.jpg): CC0 https://pixabay.com/de/paprika-nachtschattengew%C3%A4chs-1539491/
 * [`banana.jpg`](banana.jpg): CC-BY-SA 3.0 https://commons.wikimedia.org/wiki/File:Musa-sp3.1.jpg
 * [`orange.jpg`](orange.jpg): CC-BY-SA 3.0 https://commons.wikimedia.org/wiki/File:OrangeBloss_wb.jpg
 * [`lemon.jpg`](lemon.jpg): CC-BY-SA 3.0 https://commons.wikimedia.org/wiki/File:Limonu.jpg

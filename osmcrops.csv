@@ -45,7 +45,7 @@ Raspberries,raspberry,,orchard,
 Strawberries,strawberry,,orchard,
 ???????,coca_leaf,coca_plants,orchard,
 Cocoa- beans,cacao,cacao_trees,orchard,"Note different spelling (cf.: trees=cacao_trees); both spellings possible, but tag used here is more common in OSM"
-Pepper (piper spp.),pepper,pepper_plants,orchard,
+Pepper (piper spp.),piper,piper_plants,orchard,"The spice, such as black pepper (most famous)"
 ???????,nopal,nopal_plants,orchard,
 ???????,tamarind,tamarind_trees,orchard,
 Pineapples,pineapple,pineapple_plants,orchard,incorrect: trees=ananas_plants
@@ -60,8 +60,8 @@ Tangerines- mandarins- clementines- satsumas,orange,orange_trees,orchard,could a
 ???????,pomegranate,pomegranate_trees,orchard,
 ???????,pecan_nut,pecan_trees,orchard,
 # CURRENTLY MISSING/UNOFFICIAL/PROPOSALS BELOW,,,orchard,
-Chillies and peppers- green,chili|pepper,chili_plants|pepper_plants,orchard,
-Chillies and peppers- dry,chili|pepper,chili_plants|pepper_plants,orchard,
+Chillies and peppers- green,chili|pepper,chili_plants|pepper_plants,orchard,Capsicum
+Chillies and peppers- dry,chili|pepper,chili_plants|pepper_plants,orchard,Capsicum
 Nutmeg- mace and cardamoms,nutmeg,nutmeg_trees,orchard,
 Vanilla,vanilla,,orchard,
 Sisal,sisal,,farmland,
