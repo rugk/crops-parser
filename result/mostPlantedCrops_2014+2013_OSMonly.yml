@@ -1,7 +1,7 @@
 # list of most produced/cultivated crops/fruits in the world
 # source: Food and Agriculture Organization of the United Nations, http://www.fao.org/faostat/en/#data/QC
 # created/parsed by script: https://github.com/rugk/crops-parser
-# updated at: 2017-07-27
+# updated at: 2017-08-07
 default: []
 AE: [trees=date_palms, crop=tomatoe, crop=pepper, trees=guava_trees, trees=mango_trees, trees=lemon_trees, trees=lime_trees, trees=almond_trees, trees=fig_trees, trees=banana_plants, landuse=vineyard]
 AF: [landuse=vineyard, trees=apricot_trees, trees=apple_trees, trees=plum_trees, trees=almond_trees, trees=peach_trees, trees=walnut_trees, trees=fig_trees, trees=olive_trees, trees=orange_trees, trees=pear_trees, trees=pistachio_trees]
@@ -142,7 +142,7 @@ NE: [crop=tomatoe, trees=guava_trees, trees=mango_trees, trees=date_palms, crop=
 NG: [crop=tomatoe, trees=pineapple_plants, trees=cashew_trees, trees=guava_trees, trees=mango_trees, trees=papaya_trees, trees=cacao_trees, trees=coconut_palms, trees=oil_palms, trees=rubber_trees, trees=kola_trees, crop=pepper, trees=coffee_plants]
 NI: [trees=orange_trees, trees=coffee_plants, trees=pineapple_plants, trees=oil_palms, trees=banana_plants, crop=tomatoe, trees=coconut_palms, trees=agave_plants, trees=cacao_trees]
 NL: [crop=tomatoe, trees=pear_trees, trees=apple_trees, crop=pepper, crop=strawberry, trees=blueberry, trees=plum_trees, landuse=vineyard, trees=raspberry, trees=cherry_trees, trees=peach_trees]
-NO: [crop=tomatoe, trees=apple_trees, crop=strawberry, trees=raspberry, trees=plum_trees, trees=cherry_trees, trees=pear_trees, trees=blueberry, trees=oil_palms]
+'NO': [crop=tomatoe, trees=apple_trees, crop=strawberry, trees=raspberry, trees=plum_trees, trees=cherry_trees, trees=pear_trees, trees=blueberry, trees=oil_palms]
 NP: [trees=guava_trees, trees=mango_trees, trees=banana_plants, trees=orange_trees, trees=apple_trees, trees=pear_trees, trees=lemon_trees, trees=lime_trees, crop=pepper, trees=papaya_trees, trees=tea_plants, trees=pineapple_plants, trees=peach_trees, trees=plum_trees, trees=walnut_trees, crop=nut, trees=nutmeg_trees]
 NR: [trees=coconut_palms]
 NU: [trees=coconut_palms, trees=lemon_trees, trees=lime_trees, trees=banana_plants]
