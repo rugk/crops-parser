@@ -7,7 +7,7 @@ All images are cropped and possibly resized.
 * [`lemon.jpg`](lemon.jpg): CC-BY-SA 3.0 https://commons.wikimedia.org/wiki/File:Limonu.jpg
 * [`lime.jpg`](lime.jpg): CC-BY 2.0 https://www.flickr.com/photos/tanaka_juuyoh/4918425731
 * [`guava.jpg`](guava.jpg): CC-BY 3.0 https://commons.wikimedia.org/wiki/File:Starr_070519-7147_Psidium_guajava.jpg
-* [`mango.jpg`](mango.jpg): CC-BY-SA 3.0 https://commons.wikimedia.org/wiki/File:Mango_Maya.jpg
+* [`mango.jpg`](mango.jpg): CC0 https://pixabay.com/de/mango-mangifera-indica-%C3%BCber-reif-321071/
 * [`coconut.jpg`](coconut.jpg): CC-BY 2.0 https://www.flickr.com/photos/3336/148713113
 * [`apple.jpg`](apple.jpg): CC0 https://www.pexels.com/photo/close-up-of-fruits-hanging-on-tree-257840/
 * [`grape.jpg`](grape.jpg): CC0 https://pixabay.com/de/weintrauben-rotwein-weinberg-1717387/
