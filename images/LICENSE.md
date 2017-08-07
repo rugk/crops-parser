@@ -1,6 +1,9 @@
 # licenses and sources for images
 All images are cropped and possibly resized.
 
+* [`areca_nut.jpg`](areca_nut.jpg): CC-BY-SA 2.5 https://commons.wikimedia.org/wiki/File:Betel_nut_tree.JPG
+* [`tung_nut.jpg`](tung_nut.jpg): CC-BY-SA 3.0 https://commons.wikimedia.org/wiki/File:Vernicia_fordii5.jpg
+* [`brazil_nut.jpg`](brazil_nut.jpg): CC-BY 2.0 https://commons.wikimedia.org/wiki/File:%22Bertholetia_excelsa%22_Castanha-do-Par%C3%A1_Brazil-nuts_tree_2.jpg
 * [`pepper.jpg`](pepper.jpg): CC-BY-SA 3.0 https://de.wikipedia.org/wiki/Datei:Thai_peppers.jpg
 * [`banana.jpg`](banana.jpg): CC-BY-SA 3.0 https://commons.wikimedia.org/wiki/File:Musa-sp3.1.jpg
 * [`orange.jpg`](orange.jpg): CC-BY-SA 3.0 https://commons.wikimedia.org/wiki/File:OrangeBloss_wb.jpg
@@ -30,7 +33,6 @@ All images are cropped and possibly resized.
 * [`almond.jpg`](almond.jpg): CC-BY-SA 2.0 https://commons.wikimedia.org/wiki/File:Madrigueras_(20578932389)_(cropped).jpg
 * [`raspberry.jpg`](raspberry.jpg): CC0 https://pixabay.com/de/obst-himbeeren-garten-2292701/
 * [`palm.jpg`](palm.jpg): CC-BY-SA 3.0 https://commons.wikimedia.org/wiki/File:Dictyosperma_album1.JPG
-* [`nut.jpg`](nut.jpg): CC-BY-SA 3.0 https://commons.wikimedia.org/wiki/File:Fancy_raw_mixed_nuts_macro.jpg
 * [`kiwi.jpg`](kiwi.jpg): CC-BY-SA 3.0 https://commons.wikimedia.org/wiki/File:Actinidia_chinensis4.jpg
 * [`blueberry.jpg`](blueberry.jpg): Public Domain https://commons.wikimedia.org/wiki/File:PattsBlueberries.jpg
 * [`piper.jpg`](piper.jpg): CC-BY-SA 3.0 https://commons.wikimedia.org/wiki/File:Piper_nigrum001.JPG
@@ -52,4 +54,3 @@ All images are cropped and possibly resized.
 * [`mate.jpg`](mate.jpg): CC-BY-SA 3.0 https://commons.wikimedia.org/wiki/File:Yerba_Mate.jpg
 * [`jojoba.jpg`](jojoba.jpg): CC-BY 2.0 https://de.wikipedia.org/wiki/Datei:Jojoba_Nut_-_Flickr_-_treegrow.jpg
 * [`tomatoe.jpg`](tomatoe.jpg): CC-BY-SA 3.0 https://commons.wikimedia.org/wiki/File:Solanum_lycopersicum_%27Cronos%27,_tomaat_%27Cronos%27.jpg
-

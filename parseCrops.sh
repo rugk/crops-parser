@@ -13,7 +13,7 @@
 # 
 
 # constants
-TMPDIR="/tmp/cropsGenerator-$( tr -dc A-Za-z0-9 < /dev/urandom | head -c5 )"
+TMPDIR="$( mktemp --tmpdir -d cropsGenerator-XXXXX )"
 MAX_LIST=15
 CROP_BLACKLIST=$( cat crop-blacklist.list )
 ISO3166_DB="./iso3166.csv" # (modified)
@@ -73,10 +73,6 @@ convertCountryNameToCode() {
 convertCropToOsmKey() {
     getFromCsv "$OSM_CROP_KEY_DB" "^$1," 2
 }
-
-if [ ! -e "$TMPDIR" ]; then
-    mkdir -p "$TMPDIR"
-fi
 
 input="$1"
 tmpfile="$TMPDIR/data.csv"

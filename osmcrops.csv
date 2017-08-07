@@ -8,11 +8,8 @@ Hops,hop,hop_plants,orchard,
 Kiwi fruit,kiwi,kiwi_plants,orchard,
 Walnuts,walnut,walnut_trees,orchard,
 Walnuts- with shell,walnut,walnut_trees,orchard,
-Brazil nuts- with shell,nut,,orchard,Too unspecific?
-Areca nuts,nut,,orchard,Too unspecific?
 Cashew nuts- with shell,cashew_nut,cashew_trees,orchard,
 Cashewapple,cashew_nut,cashew_trees,orchard,
-Tung nuts,nut,,orchard,Too unspecific?
 Pears,pear,pear_trees,orchard,
 Tea,tea,tea_plants,orchard,
 Cherries,cherry,cherry_trees,orchard,
@@ -75,3 +72,6 @@ Jojoba seed,jojoba,jojoba_plants,orchard,
 Cranberries,cranberry,,orchard,
 Grapefruit (inc. pomelos),grapefruit,grapefruit_trees,orchard,
 Tomatoes,tomatoe,,orchard,often in greenhouses
+Brazil nuts- with shell,brazil_nut,brazil_nut_trees,orchard,
+Areca nuts,areca_nut,areca_nut_trees,orchard,
+Tung nuts,tung_nut,tung_nut_trees,orchard,
