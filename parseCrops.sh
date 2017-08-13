@@ -13,13 +13,13 @@
 #
 
 # constants
-TMPDIR="/tmp/cropsGenerator-$( tr -dc A-Za-z0-9 < /dev/urandom | head -c5 )"
+TMPDIR="$( mktemp --tmpdir -d cropsGenerator-XXXXX )"
 MAX_LIST=15
 CROP_BLACKLIST=$( cat crop-blacklist.list )
 ISO3166_DB="./iso3166.csv" # (modified)
 OSM_CROP_KEY_DB="./osmcrops.csv"
 # Convert to OSM keys? 0=no; 1=yes; 2=yes, and skip non-OSM keys
-OSM_HANDLING="2"
+OSM_HANDLING="1"
 # add path to file here to collect missing OSM keys, only works if OSM_HANDLING != 0
 OSM_COLLECT_MISSING="" # result/missingOSM.list
 
@@ -73,10 +73,6 @@ convertCountryNameToCode() {
 convertCropToOsmKey() {
     getFromCsv "$OSM_CROP_KEY_DB" "^$1," 2
 }
-
-if [ ! -e "$TMPDIR" ]; then
-    mkdir -p "$TMPDIR"
-fi
 
 input="$1"
 tmpfile="$TMPDIR/data.csv"
