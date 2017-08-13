@@ -6,20 +6,20 @@
 # to country codes.
 # source: https://github.com/lukes/ISO-3166-Countries-with-Regional-Codes,
 # modified
-# 
+#
 # LICENSE: Copyright (c) 2017 rugk, MIT license, see LICENSE.md
-# 
+#
 # use: parseCrop.sh FAQSTAT_input.csv cropsOutput.yml
-# 
+#
 
 # constants
-TMPDIR="$( mktemp --tmpdir -d cropsGenerator-XXXXX )"
+TMPDIR="/tmp/cropsGenerator-$( tr -dc A-Za-z0-9 < /dev/urandom | head -c5 )"
 MAX_LIST=15
 CROP_BLACKLIST=$( cat crop-blacklist.list )
 ISO3166_DB="./iso3166.csv" # (modified)
 OSM_CROP_KEY_DB="./osmcrops.csv"
 # Convert to OSM keys? 0=no; 1=yes; 2=yes, and skip non-OSM keys
-OSM_HANDLING="1"
+OSM_HANDLING="2"
 # add path to file here to collect missing OSM keys, only works if OSM_HANDLING != 0
 OSM_COLLECT_MISSING="" # result/missingOSM.list
 
@@ -27,7 +27,7 @@ OSM_COLLECT_MISSING="" # result/missingOSM.list
 #
 # Returns 0 if the specified string contains the specified substring,
 # otherwise returns 1.
-# 
+#
 # thanks https://stackoverflow.com/questions/2829613/how-do-you-tell-if-a-string-contains-another-string-in-unix-shell-scripting#8811800
 contains() {
     string="$1"
@@ -74,6 +74,10 @@ convertCropToOsmKey() {
     getFromCsv "$OSM_CROP_KEY_DB" "^$1," 2
 }
 
+if [ ! -e "$TMPDIR" ]; then
+    mkdir -p "$TMPDIR"
+fi
+
 input="$1"
 tmpfile="$TMPDIR/data.csv"
 outfile="$2"
@@ -98,7 +102,7 @@ adjustdatasets() {
             return
         fi
     done
-    
+
     # filter out 0 values
     if [ "$4" = "0" ]; then
         # echo "$2 is zero. Skip."
@@ -108,11 +112,11 @@ adjustdatasets() {
     # replace comma in area & item columns
     area=$( printf "%s" "$1" | simplifyCsvKey )
     item=$( printf "%s" "$2" | simplifyCsvKey )
-    
+
     # optionally, convert items to OSM keys
     if [ $OSM_HANDLING -ge 1 ]; then
         itemOsm=$( convertCropToOsmKey "$item" )
-        
+
         if [ "$itemOsm" = "" ]; then
             if [ "$OSM_COLLECT_MISSING" != "" ]; then
                 echo "$item" >> "$TMPDIR/osmmissing.csv"
@@ -130,7 +134,7 @@ adjustdatasets() {
             item="$itemOsm"
         fi
     fi
-    
+
     # numbers in value column do not need special handling
     printf "%s,%s,%s,%s\n" "$area" "$item" "$3" "$4" >> "$tmpfile.3"
 }
@@ -147,7 +151,7 @@ export -f convertCropToOsmKey
 export -f adjustdatasets
 
 rm "$tmpfile.3" 2> /dev/null
-csvtool call adjustdatasets "$tmpfile.2" 
+csvtool call adjustdatasets "$tmpfile.2"
 
 echo "Sum up duplicate elements…"
 sort "$tmpfile.3" > "$tmpfile.4"
@@ -159,7 +163,7 @@ lastkey=""
 while read -r line; do
     key=$( echo "$line" | awk -F ',' '{ print $1","$2","$3 }' )
     value=$( echo "$line" | awk -F ',' '{ print $4 }' )
-    
+
     if [ "$key" = "$lastkey" ]; then
         summedCount=$(( summedCount + 1 ))
         # if key is the same as last one, sum up values
@@ -185,7 +189,7 @@ lastkey=""
 while read -r line; do
     key=$( echo "$line" | awk -F ',' '{ print $1","$2 }' )
     value=$( echo "$line" | awk -F ',' '{ print $4 }' )
-    
+
     if [ "$key" = "$lastkey" ]; then
         count=$(( count + 1 ))
         # calculate average
@@ -203,7 +207,7 @@ done < "$tmpfile.5"
 printf "%s,%s\n" "$lastkey" "$(( valuesum / count ))" >> "$tmpfile.6"
 
 echo "Sort data…"
-# first remove duplicates from different 
+# first remove duplicates from different
 # sort data by "value"
 sort --field-separator=',' -n -r --key=3 "$tmpfile.6" > "$tmpfile.7"
 
@@ -225,10 +229,10 @@ for area in $areas; do
         echo "WARNING: No language code for $area could be found. Skip."
         continue
     fi
-    
+
     # extract data from file, form it into one line separated with commas
     crops=$( grep "$area," "$tmpfile.7" | cut -d , -f 2 | uniq | head -n "$MAX_LIST" | tr '\n' ',' | tr '|' ',' | sed -e 's/,/, /g' )
-    
+
     # write data into new file
     # the stripping of the last characters (the last ", ") is not strictly POSIX-compliant, but works in all shells, nowadays
     printf "%s: [%s]\n" "$areaShort" "${crops:0:-2}" >> "$tmpfile.8"
