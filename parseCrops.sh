@@ -9,11 +9,11 @@
 #
 # LICENSE: Copyright (c) 2017 rugk, MIT license, see LICENSE.md
 #
-# use: parseCrop.sh FAQSTAT_input.csv cropsOutput.yml
+# use: parseCrop.sh input.csv cropsOutput.yml
 #
 
 # constants
-TMPDIR="$( mktemp --tmpdir -d cropsGenerator-XXXXX )"
+TMPDIR="$( mktemp --tmpdir -d crops-parser-XXXXX )"
 MAX_LIST=15
 CROP_BLACKLIST=$( cat crop-blacklist.list )
 ISO3166_DB="./iso3166.csv" # (modified)

@@ -1,4 +1,4 @@
-This license only applies to the code in this repository. All data included in this repo is third-party data and may thus be governed by different license. 
+This license only applies to the **code** (as in software code) in this repository. All other data included in this repo is third-party data and may thus be governed by different license. 
 
 Copyright (c) 2017 rugk
 
