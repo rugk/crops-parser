@@ -7,17 +7,17 @@ file | author | license | URL
 [`tung_nut.jpg`](tung_nut.jpg) | KENPEI | CC-BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Vernicia_fordii5.jpg
 [`brazil_nut.jpg`](brazil_nut.jpg) | mauroguanandi | CC-BY 2.0 | https://commons.wikimedia.org/wiki/File:%22Bertholetia_excelsa%22_Castanha-do-Par%C3%A1_Brazil-nuts_tree_2.jpg
 [`chili.jpg`](chili.jpg) | Daniel Risacher | CC-BY-SA 3.0 | https://de.wikipedia.org/wiki/Datei:Thai_peppers.jpg
-[`pepper.jpg`](pepper.jpg) | pixel2013 | CC0 | https://pixabay.com/de/paprika-nachtschattengew%C3%A4chs-1539491/
+[`pepper.jpg`](pepper.jpg) | pixel2013 | CC0 | https://pixabay.com/en/paprika-nachtschattengew%C3%A4chs-1539491/
 [`banana.jpg`](banana.jpg) | JoJan | CC-BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Musa-sp3.1.jpg
 [`orange.jpg`](orange.jpg) | Ellen Levy Finch (Elf) | CC-BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:OrangeBloss_wb.jpg
 [`lemon.jpg`](lemon.jpg) | Img~commonswiki | CC-BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Limonu.jpg
 [`lime.jpg`](lime.jpg) | TANAKA Juuyoh (田中十洋) | CC-BY 2.0 | https://www.flickr.com/photos/tanaka_juuyoh/4918425731
 [`guava.jpg`](guava.jpg) | Forest & Kim Starr | CC-BY 3.0 | https://commons.wikimedia.org/wiki/File:Starr_070519-7147_Psidium_guajava.jpg
-[`mango.jpg`](mango.jpg) | sarangib | CC0 | https://pixabay.com/de/mango-mangifera-indica-%C3%BCber-reif-321071/
+[`mango.jpg`](mango.jpg) | sarangib | CC0 | https://pixabay.com/en/mango-mangifera-indica-%C3%BCber-reif-321071/
 [`mangosteen.jpg`](mangosteen.jpg) | Michael Hermann | CC-BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Fruit_of_Garcinia_mangostana.JPG
 [`coconut.jpg`](coconut.jpg) | Diego Torres Silvestre | CC-BY 2.0 | https://www.flickr.com/photos/3336/148713113
 [`apple.jpg`](apple.jpg) | mploscar | CC0 | https://www.pexels.com/photo/close-up-of-fruits-hanging-on-tree-257840/
-[`grape.jpg`](grape.jpg) | mploscar | CC0 | https://pixabay.com/de/weintrauben-rotwein-weinberg-1717387/
+[`grape.jpg`](grape.jpg) | mploscar | CC0 | https://pixabay.com/en/weintrauben-rotwein-weinberg-1717387/
 [`ananas.jpg`](ananas.jpg) | Fractalux | CC0 | https://commons.wikimedia.org/wiki/File:Ananas_jardin_Martinique.jpg
 [`pear.jpg`](pear.jpg) | Keith Weller | Public Domain | https://commons.wikimedia.org/wiki/File:Pears.jpg
 [`plum.jpg`](plum.jpg) | Dinkum | CC0 | https://commons.wikimedia.org/wiki/File:Pflaumen.JPG
@@ -35,7 +35,7 @@ file | author | license | URL
 [`fig.jpg`](fig.jpg) | Céréales Killer/Archives et jardin personnels | CC-BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Grappe_de_figues.jpg
 [`tea.jpg`](tea.jpg) | James Steakley | CC-BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Camellia_sinensis_(Boltz_Conservatory).JPG
 [`almond.jpg`](almond.jpg) | antcaesar | CC-BY-SA 2.0 | https://commons.wikimedia.org/wiki/File:Madrigueras_(20578932389)_(cropped).jpg
-[`raspberry.jpg`](raspberry.jpg) | nocekrudy | CC0 | https://pixabay.com/de/obst-himbeeren-garten-2292701/
+[`raspberry.jpg`](raspberry.jpg) | nocekrudy | CC0 | https://pixabay.com/en/obst-himbeeren-garten-2292701/
 [`palm.jpg`](palm.jpg) | B.navez | CC-BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Dictyosperma_album1.JPG
 [`kiwi.jpg`](kiwi.jpg) | KENPEI | CC-BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Actinidia_chinensis4.jpg
 [`blueberry.jpg`](blueberry.jpg) | PhreddieH3 | Public Domain | https://commons.wikimedia.org/wiki/File:PattsBlueberries.jpg
@@ -50,7 +50,7 @@ file | author | license | URL
 [`sisal.jpg`](sisal.jpg) | Alberto Coutinho/AGECOM | CC-BY 2.0 | https://www.flickr.com/photos/agecombahia/5189770130
 [`pistachio.jpg`](pistachio.jpg) | Paolo Galli | CC-BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Pistacchio_di_Bronte.jpg
 [`nutmeg.jpg`](nutmeg.jpg) | W.A. Djatmiko Wie146 | CC-BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Myris_fragr_Fr_080112-3290_ltn.jpg
-[`persimmon.jpg`](persimmon.jpg) | bokbooin90 | CC0 | https://pixabay.com/de/herbst-persimone-persimmon-1994084/
+[`persimmon.jpg`](persimmon.jpg) | bokbooin90 | CC0 | https://pixabay.com/en/herbst-persimone-persimmon-1994084/
 [`vanilla.jpg`](vanilla.jpg) | H. Zell | CC-BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Vanilla_pompona_01.jpg
 [`cranberry.jpg`](cranberry.jpg) | Ecomare/Sytske Dijksen | CC-BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Ecomare_-_cranberry_in_de_duinen_(cranberry-duinpark-sd).jpg
 [`agave.jpg`](agave.jpg) | Marc Ryckaert (MJJR) | CC-BY-SA 3.0 | https://en.wikipedia.org/wiki/File:Agave_americana_R01.jpg
