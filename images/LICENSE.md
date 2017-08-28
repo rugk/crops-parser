@@ -6,8 +6,8 @@ file | author | license | URL
 [`areca_nut.jpg`](areca_nut.jpg) | Mamun2a | CC-BY-SA 2.5 | https://commons.wikimedia.org/wiki/File:Betel_nut_tree.JPG
 [`tung_nut.jpg`](tung_nut.jpg) | KENPEI | CC-BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Vernicia_fordii5.jpg
 [`brazil_nut.jpg`](brazil_nut.jpg) | mauroguanandi | CC-BY 2.0 | https://commons.wikimedia.org/wiki/File:%22Bertholetia_excelsa%22_Castanha-do-Par%C3%A1_Brazil-nuts_tree_2.jpg
-[`chili.jpg`](chili.jpg) | Daniel Risacher | CC-BY-SA 3.0 | https://de.wikipedia.org/wiki/Datei:Thai_peppers.jpg
-[`pepper.jpg`](pepper.jpg) | pixel2013 | CC0 | https://pixabay.com/en/paprika-nachtschattengew%C3%A4chs-1539491/
+[`chilli_pepper.jpg`](chilli_pepper.jpg) | Daniel Risacher | CC-BY-SA 3.0 | https://de.wikipedia.org/wiki/Datei:Thai_peppers.jpg
+[`sweet_pepper.jpg`](sweet_pepper.jpg) | pixel2013 | CC0 | https://pixabay.com/en/paprika-nachtschattengew%C3%A4chs-1539491/
 [`banana.jpg`](banana.jpg) | JoJan | CC-BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Musa-sp3.1.jpg
 [`orange.jpg`](orange.jpg) | Ellen Levy Finch (Elf) | CC-BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:OrangeBloss_wb.jpg
 [`lemon.jpg`](lemon.jpg) | Img~commonswiki | CC-BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Limonu.jpg
@@ -39,7 +39,7 @@ file | author | license | URL
 [`palm.jpg`](palm.jpg) | B.navez | CC-BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Dictyosperma_album1.JPG
 [`kiwi.jpg`](kiwi.jpg) | KENPEI | CC-BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Actinidia_chinensis4.jpg
 [`blueberry.jpg`](blueberry.jpg) | PhreddieH3 | Public Domain | https://commons.wikimedia.org/wiki/File:PattsBlueberries.jpg
-[`piper.jpg`](piper.jpg) | Meneerke bloem | CC-BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Piper_nigrum001.JPG
+[`pepper.jpg`](pepper.jpg) | Meneerke bloem | CC-BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Piper_nigrum001.JPG
 [`olive.jpg`](olive.jpg) | David Perez | CC-BY 3.0 | https://commons.wikimedia.org/wiki/File:Olea_europaea_01_by-dpc.jpg
 [`date.jpg`](date.jpg) | Nepenthes | CC-BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Dates005.jpg
 [`rubber.jpg`](rubber.jpg) | PRA | CC-BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Latex_-_Hevea_-_Cameroun.JPG
