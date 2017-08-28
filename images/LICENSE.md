@@ -6,7 +6,7 @@ file | author | license | URL
 [`areca_nut.jpg`](areca_nut.jpg) | Mamun2a | CC-BY-SA 2.5 | https://commons.wikimedia.org/wiki/File:Betel_nut_tree.JPG
 [`tung_nut.jpg`](tung_nut.jpg) | KENPEI | CC-BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Vernicia_fordii5.jpg
 [`brazil_nut.jpg`](brazil_nut.jpg) | mauroguanandi | CC-BY 2.0 | https://commons.wikimedia.org/wiki/File:%22Bertholetia_excelsa%22_Castanha-do-Par%C3%A1_Brazil-nuts_tree_2.jpg
-[`chilli_pepper.jpg`](chilli_pepper.jpg) | Daniel Risacher | CC-BY-SA 3.0 | https://de.wikipedia.org/wiki/Datei:Thai_peppers.jpg
+[`chilli_pepper.jpg`](chilli_pepper.jpg) | Daniel Risacher | CC-BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Thai_peppers.jpg
 [`sweet_pepper.jpg`](sweet_pepper.jpg) | pixel2013 | CC0 | https://pixabay.com/en/paprika-nachtschattengew%C3%A4chs-1539491/
 [`banana.jpg`](banana.jpg) | JoJan | CC-BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Musa-sp3.1.jpg
 [`orange.jpg`](orange.jpg) | Ellen Levy Finch (Elf) | CC-BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:OrangeBloss_wb.jpg
@@ -43,7 +43,7 @@ file | author | license | URL
 [`olive.jpg`](olive.jpg) | David Perez | CC-BY 3.0 | https://commons.wikimedia.org/wiki/File:Olea_europaea_01_by-dpc.jpg
 [`date.jpg`](date.jpg) | Nepenthes | CC-BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Dates005.jpg
 [`rubber.jpg`](rubber.jpg) | PRA | CC-BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Latex_-_Hevea_-_Cameroun.JPG
-[`cashew.jpg`](cashew.jpg) | Abhishek Jacob | CC-BY-SA 3.0 | https://de.wikipedia.org/wiki/Datei:Cashew_apples.jpg
+[`cashew.jpg`](cashew.jpg) | Abhishek Jacob | CC-BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Cashew_apples.jpg
 [`hop.jpg`](hop.jpg) | LuckyStarr | CC-BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Hopfendolde-mit-hopfengarten.jpg
 [`hazel.jpg`](hazel.jpg) | Horst Frank | CC-BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Haselnuss_Gr_99.jpg
 [`chestnut.jpg`](chestnut.jpg) | historicair | CC-BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Chataigne.JPG
@@ -53,8 +53,8 @@ file | author | license | URL
 [`persimmon.jpg`](persimmon.jpg) | bokbooin90 | CC0 | https://pixabay.com/en/herbst-persimone-persimmon-1994084/
 [`vanilla.jpg`](vanilla.jpg) | H. Zell | CC-BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Vanilla_pompona_01.jpg
 [`cranberry.jpg`](cranberry.jpg) | Ecomare/Sytske Dijksen | CC-BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Ecomare_-_cranberry_in_de_duinen_(cranberry-duinpark-sd).jpg
-[`agave.jpg`](agave.jpg) | Marc Ryckaert (MJJR) | CC-BY-SA 3.0 | https://en.wikipedia.org/wiki/File:Agave_americana_R01.jpg
+[`agave.jpg`](agave.jpg) | Marc Ryckaert (MJJR) | CC-BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Agave_americana_R01.jpg
 [`kola.jpg`](kola.jpg) | Michael Hermann | CC-BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Fruits_of_Cola_nitida.JPG
 [`mate.jpg`](mate.jpg) | Ilosuna | CC-BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Yerba_Mate.jpg
-[`jojoba.jpg`](jojoba.jpg) | Katja Schulz | CC-BY 2.0 | https://de.wikipedia.org/wiki/Datei:Jojoba_Nut_-_Flickr_-_treegrow.jpg
+[`jojoba.jpg`](jojoba.jpg) | Katja Schulz | CC-BY 2.0 | https://commons.wikimedia.org/wiki/File:Jojoba_Nut_-_Flickr_-_treegrow.jpg
 [`tomatoe.jpg`](tomatoe.jpg) | Rasbak | CC-BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Solanum_lycopersicum_%27Cronos%27,_tomaat_%27Cronos%27.jpg
