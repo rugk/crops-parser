@@ -19,7 +19,7 @@ CROP_BLACKLIST=$( cat crop-blacklist.list )
 ISO3166_DB="./iso3166.csv" # (modified)
 OSM_CROP_KEY_DB="./osmcrops.csv"
 # Convert to OSM keys? 0=no; 1=yes; 2=yes, and skip non-OSM keys
-OSM_HANDLING="1"
+OSM_HANDLING="2"
 # add path to file here to collect missing OSM keys, only works if OSM_HANDLING != 0
 OSM_COLLECT_MISSING="" # result/missingOSM.list
 
@@ -100,7 +100,7 @@ adjustdatasets() {
     done
 
     # filter out 0 values
-    if [ "$4" = "0" ]; then
+    if [ "$4" = "0" ] || [ "$4" = "" ]; then
         # echo "$2 is zero. Skip."
         return
     fi
@@ -263,4 +263,4 @@ if [ "$OSM_COLLECT_MISSING" != "" ]; then
     sort < "$TMPDIR/osmmissing.csv" | uniq -c | sort -n -r > "$OSM_COLLECT_MISSING"
 fi
 
-rm -rf "$TMPDIR"
+#rm -rf "$TMPDIR"
