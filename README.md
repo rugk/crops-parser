@@ -27,7 +27,7 @@ This is an overview of what happens:
 * `Prepare CSV…` – It strips the table header and extracts the columns of interest.
 * `Adjusting datasets…` – Adjusts each dataset. E.g. it strips commas for easier processing, applies the blacklist and coverts the crop names to OSM keys (optional).
 * `Sum up duplicate elements…` – Finds exact duplicates (considering the year too) and sums them up. Afterwards reports the sucess. (Usually items should only be summed up when converting OSM tags.)
-* `Calculate yearly average…` – Calculates the average tonnes in produc tion when multiple years are given.
+* `Calculate yearly average…` – Calculates the average tonnes/area in production when multiple years are given.
 * `Sort data…` – It sorts the whole data according to the tonnes of produced crops, independent of the country.
 * `Evaluate data…` – It extracts all crops for each country and transforms the first fifteen crops listet into the YAML format. Additionally it replaces the country name with the 2-letter country code (ISO 3166).
 * `Finish processing…` – It adds the header and default crops and sorts the YAML another time, so the countries are sorted.
@@ -41,4 +41,3 @@ The script can handle multiple data from multiple years quite well. After summin
 ## Extras
 
 Additionally, there is a collection of square images of all "OSM fruits", which are included in the top-15. You can find it in the directory [`images`](images/).
-
