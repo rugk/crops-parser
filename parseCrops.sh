@@ -4,10 +4,9 @@
 # each step performed.
 # It also needs a ISO3166 database in CSV format to convert the country names
 # to country codes.
-# source: https://github.com/lukes/ISO-3166-Countries-with-Regional-Codes,
-# modified
+# source: https://www.fao.org/faostat/en/#definitions, modified
 #
-# LICENSE: Copyright (c) 2017 rugk, MIT license, see LICENSE.md
+# LICENSE: Copyright (c) 2017-2022 rugk, MIT license, see LICENSE.md
 #
 # use: parseCrop.sh input.csv cropsOutput.yml
 #
@@ -16,12 +15,12 @@
 TMPDIR="$( mktemp --tmpdir -d crops-parser-XXXXX )"
 MAX_LIST=15
 CROP_BLACKLIST=$( cat crop-blacklist.list )
-ISO3166_DB="./iso3166.csv" # (modified)
+ISO3166_DB="./fao-country-db.csv" # (modified, see the convertCountryNameToCode function for details)
 OSM_CROP_KEY_DB="./osmcrops.csv"
 # Convert to OSM keys? 0=no; 1=yes; 2=yes, and skip non-OSM keys
 OSM_HANDLING="2"
 # add path to file here to collect missing OSM keys, only works if OSM_HANDLING != 0
-OSM_COLLECT_MISSING="" # result/missingOSM.list
+OSM_COLLECT_MISSING="result/missingOSM.list" # result/missingOSM.list
 
 # contains(string, substring)
 #
@@ -62,8 +61,14 @@ getFromCsv() {
 #
 # Using $ISO3166_DB this converts the country names to the corresponding country
 # codes. If this fails, it returns an empty string.
+#
+# The database needs to satisfy the following conditions:
+# * One column before the country name!
+# * One column after the country name!
+# * The column no. 4 should contain the short 2-letter ISO3166 code.
+# * It must not have any quotes! Replace "," with the "-" sign.
 convertCountryNameToCode() {
-    getFromCsv "$ISO3166_DB" "$1" 2
+    getFromCsv "$ISO3166_DB" ",$1," 4
 }
 
 # convertCropToOsmKey(cropName)
@@ -240,7 +245,7 @@ echo "Finish processing…"
 # add header
 {
     echo "# list of most produced/cultivated crops/fruits in the world"
-    echo "# source: Food and Agriculture Organization of the United Nations, http://www.fao.org/faostat/en/#data/QC"
+    echo "# source: Food and Agriculture Organization of the United Nations, https://www.fao.org/faostat/en/#data/QCL"
     echo "# created/parsed by script: https://github.com/rugk/crops-parser"
     echo "# updated at: $( date +'%F' )"
     echo "default: []"

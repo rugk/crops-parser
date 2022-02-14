@@ -1,8 +1,18 @@
 # Crops parser
 
-This shell script parses data from the [Food and Agriculture Organization of the United Nations](http://www.fao.org/faostat/en/#data/QC) about the cultivated/planted plants/fruits on the world into a YAML file, which groups them per country to see the top 15.
+This shell script parses data from the [Food and Agriculture Organization of the United Nations](https://www.fao.org/faostat/en/#data/QCL) about the cultivated/planted plants/fruits on the world into a YAML file, which groups them per country to see the top 15.
 
 It has been created for the OpenStreetMap mapping app [StreetComplete](https://github.com/westnordost/StreetComplete), see [this issue](https://github.com/westnordost/StreetComplete/issues/368) for details.
+
+## How to download data?
+
+Go to the [FAQ website](https://www.fao.org/faostat/en/#data/QCL) and download the FAO data. Things to remember:
+1. Select all countries and **make sure to select the FAO** coding system.
+2. Either select the area harvested (in ha) or the production quantity (in tonnes) to get useful results.
+3. Select all crops in the items list. (The new FAO website merged crops [C] and livestock [L].)
+4. Save the data.
+
+![screenshot of the FAO website export with important things to select highlighted as explained above](./fao-website-guide.png)
 
 ## How to run it?
 
@@ -10,16 +20,19 @@ The script is mostly POSIX-compliant, so it should work on all systems, but a CL
 
 If this is done, you can just execute it:
 ```shell
-$ ./parseCrops.sh source/tonnes_harvested_2014.csv result/mostTonnesHarvest_2014.yml
+$ ./parseCrops.sh source/area_harvested_2019+2020.csv result/OsmOnly/mostAreaHarvest_2019+2020.yml    
 Prepare CSV…
 Adjusting datasets…
 Sum up duplicate elements…
-Summed up 236 duplicates.
+Summed up 289 duplicates.
 Calculate yearly average…
 Sort data…
 Evaluate data…
+WARNING: No language code for China could be found. Skip.
 Finish processing…
 ```
+
+The language code warning for China is to be expected, see [the contributing guide for details](./CONTRIBUTING.md).
 
 ## What does it?
 
@@ -34,10 +47,18 @@ This is an overview of what happens:
 
 ## Result
 
-The results can be seen in the directory [result](result). Both data from 2014 and from 2013/2014 are included.
+The results can be seen in the directory [result](result). All legacy and more up-to-date data are included.
 
 The script can handle multiple data from multiple years quite well. After summing up equal items per year (and country) it later calculates the average of the production numbers from both years.
 
 ## Extras
 
 Additionally, there is a collection of square images of all "OSM fruits", which are included in the top-15. You can find it in the directory [`images`](images/).
+
+## Legal stuff
+
+The data taken from the FAO is [licensed under the terms they describe]https://www.fao.org/contact-us/terms/db-terms-of-use/en/(), i.e. CC BY-NC-SA 3.0 IGO. This is described [in detail in this document](LICENSE-data.md).
+
+![This work is made available under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 IGO license (CC BY-NC-SA 3.0 IGO; https://creativecommons.org/licenses/by-nc-sa/3.0/igo). In addition to this license, some database specific terms of use are listed in the Terms of Use of Datasets.](https://www.fao.org/faostat/en/src/images/creative_commons.png)
+
+Apart from that, all code part is licensed [under the MIT license](LICENSE.md).
