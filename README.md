@@ -41,3 +41,11 @@ The script can handle multiple data from multiple years quite well. After summin
 ## Extras
 
 Additionally, there is a collection of square images of all "OSM fruits", which are included in the top-15. You can find it in the directory [`images`](images/).
+
+## Legal stuff
+
+The data is taken from the FAO and [licensed under the terms they describe]https://www.fao.org/contact-us/terms/db-terms-of-use/en/(), i.e. CC BY-NC-SA 3.0 IGO. This is described [in detail in this document](LICENSE-data.md).
+
+![This work is made available under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 IGO license (CC BY-NC-SA 3.0 IGO; https://creativecommons.org/licenses/by-nc-sa/3.0/igo). In addition to this license, some database specific terms of use are listed in the Terms of Use of Datasets.](https://www.fao.org/faostat/en/src/images/creative_commons.png)
+
+Apart from that, all code part is licensed [under the MIT license](LICENSE.md).
