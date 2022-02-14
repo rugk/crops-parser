@@ -57,7 +57,7 @@ Additionally, there is a collection of square images of all "OSM fruits", which 
 
 ## Legal stuff
 
-The data taken from the FAO is [licensed under the terms they describe]https://www.fao.org/contact-us/terms/db-terms-of-use/en/(), i.e. CC BY-NC-SA 3.0 IGO. This is described [in detail in this document](LICENSE-data.md).
+The data taken from the FAO is [licensed under the terms they describe](https://www.fao.org/contact-us/terms/db-terms-of-use/en/), i.e. CC BY-NC-SA 3.0 IGO. This is described [in detail in this document](LICENSE-data.md).
 
 ![This work is made available under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 IGO license (CC BY-NC-SA 3.0 IGO; https://creativecommons.org/licenses/by-nc-sa/3.0/igo). In addition to this license, some database specific terms of use are listed in the Terms of Use of Datasets.](https://www.fao.org/faostat/en/src/images/creative_commons.png)
 
