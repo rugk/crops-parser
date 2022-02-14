@@ -240,7 +240,7 @@ echo "Finish processing…"
 # add header
 {
     echo "# list of most produced/cultivated crops/fruits in the world"
-    echo "# source: Food and Agriculture Organization of the United Nations, http://www.fao.org/faostat/en/#data/QC"
+    echo "# source: Food and Agriculture Organization of the United Nations, https://www.fao.org/faostat/en/#data/QCL"
     echo "# created/parsed by script: https://github.com/rugk/crops-parser"
     echo "# updated at: $( date +'%F' )"
     echo "default: []"
