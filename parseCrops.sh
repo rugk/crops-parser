@@ -20,7 +20,7 @@ OSM_CROP_KEY_DB="./osmcrops.csv"
 # Convert to OSM keys? 0=no; 1=yes; 2=yes, and skip non-OSM keys
 OSM_HANDLING="2"
 # add path to file here to collect missing OSM keys, only works if OSM_HANDLING != 0
-OSM_COLLECT_MISSING="result/missingOSM.list" # result/missingOSM.list
+OSM_COLLECT_MISSING="" # result/missingOSM.list
 
 # contains(string, substring)
 #

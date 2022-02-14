@@ -132,7 +132,7 @@ NE: [guava, mango, mangosteen, chilli_pepper, sweet_pepper, tomato, date, pepper
 NG: [cacao, tomato, rubber, kola_nut, pineapple, cashew_nut, guava, mango, mangosteen, chilli_pepper, sweet_pepper, papaya, coconut, coffee]
 NI: [coffee, orange, cacao, agave, pineapple, banana, tomato, coconut, chilli_pepper, sweet_pepper]
 NL: [pear, apple, tomato, strawberry, chilli_pepper, sweet_pepper, blueberry, plum, raspberry, cherry, grape]
-'NO’: [apple, strawberry, plum, raspberry, cherry, pear, tomato, blueberry]
+'NO': [apple, strawberry, plum, raspberry, cherry, pear, tomato, blueberry]
 NP: [guava, mango, mangosteen, tea, banana, orange, nutmeg, chilli_pepper, sweet_pepper, lemon, lime, apple, pear, coffee, areca_nut, walnut, peach, plum, papaya]
 NR: [coconut]
 NU: [coconut, banana, lemon, lime]
