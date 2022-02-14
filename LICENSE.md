@@ -1,6 +1,6 @@
 This license only applies to the **code** (as in software code) in this repository. All other data included in this repo is third-party data and may thus be governed by different license. 
 
-Copyright (c) 2017 rugk
+Copyright (c) 2017-2022 rugk
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 

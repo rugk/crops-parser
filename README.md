@@ -7,7 +7,7 @@ It has been created for the OpenStreetMap mapping app [StreetComplete](https://g
 ## How to download data?
 
 Go to the [FAQ website](https://www.fao.org/faostat/en/#data/QCL) and download the FAO data. Things to remember:
-1. Select all countries and **switch to the ISO3** coding system.
+1. Select all countries and **make sure to select the FAO** coding system.
 2. Either select the area harvested (in ha) or the production quantity (in tonnes) to get useful results.
 3. Select all crops in the items list. (The new FAO website merged crops [C] and livestock [L].)
 4. Save the data.
@@ -20,7 +20,7 @@ The script is mostly POSIX-compliant, so it should work on all systems, but a CL
 
 If this is done, you can just execute it:
 ```shell
-$ ./parseCrops.sh source/area_harvested_2019+2020.csv result/OsmOnly/mostAreaHarvest_2019+2020.yml
+$ ./parseCrops.sh source/area_harvested_2019+2020.csv result/OsmOnly/mostAreaHarvest_2019+2020.yml    
 Prepare CSV…
 Adjusting datasets…
 Sum up duplicate elements…
@@ -28,9 +28,11 @@ Summed up 289 duplicates.
 Calculate yearly average…
 Sort data…
 Evaluate data…
-WARNING: No language code for North Macedonia could be found. Skip.
+WARNING: No language code for China could be found. Skip.
 Finish processing…
 ```
+
+The language code warning for China is to be expected, see [the contributing guide for details](./CONTRIBUTING.md).
 
 ## What does it?
 
